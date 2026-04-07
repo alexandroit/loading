@@ -3,13 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7fafc" />
     <meta
       name="description"
       content="@revivejs/loading is a premium framework-agnostic loading toolkit for modern web applications."
     />
     <title>@revivejs/loading</title>
-    <script type="module" crossorigin src="./assets/index-B6C-pIID.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CB_cksUo.css">
+    <script>
+      (() => {
+        try {
+          const stored = window.localStorage.getItem('revivejs-loading-docs-theme');
+          document.documentElement.dataset.docsTheme = stored === 'dark' ? 'dark' : 'light';
+        } catch {
+          document.documentElement.dataset.docsTheme = 'light';
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-Xlrnv7eX.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CZw1Pw8W.css">
   </head>
   <body>
     <div id="app"></div>

@@ -1,21 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap");
 
 :root {
-  color-scheme: dark;
-  --site-bg: #08111f;
-  --site-bg-soft: rgba(15, 23, 42, 0.9);
-  --site-panel: rgba(8, 17, 31, 0.76);
-  --site-panel-strong: rgba(8, 17, 31, 0.92);
-  --site-border: rgba(148, 163, 184, 0.16);
-  --site-border-strong: rgba(148, 163, 184, 0.22);
-  --site-text: #e2e8f0;
-  --site-muted: #94a3b8;
-  --site-accent: #5eead4;
-  --site-accent-strong: #38bdf8;
-  --site-shadow: 0 24px 80px rgba(2, 6, 23, 0.28);
-}
-
-:root[data-docs-theme="light"] {
   color-scheme: light;
   --site-bg: #f7fafc;
   --site-bg-soft: rgba(255, 255, 255, 0.88);
@@ -28,6 +13,21 @@
   --site-accent: #0f766e;
   --site-accent-strong: #2563eb;
   --site-shadow: 0 24px 80px rgba(148, 163, 184, 0.18);
+}
+
+:root[data-docs-theme="dark"] {
+  color-scheme: dark;
+  --site-bg: #08111f;
+  --site-bg-soft: rgba(15, 23, 42, 0.9);
+  --site-panel: rgba(8, 17, 31, 0.76);
+  --site-panel-strong: rgba(8, 17, 31, 0.92);
+  --site-border: rgba(148, 163, 184, 0.16);
+  --site-border-strong: rgba(148, 163, 184, 0.22);
+  --site-text: #e2e8f0;
+  --site-muted: #94a3b8;
+  --site-accent: #5eead4;
+  --site-accent-strong: #38bdf8;
+  --site-shadow: 0 24px 80px rgba(2, 6, 23, 0.28);
 }
 
 * {
@@ -370,10 +370,6 @@ pre {
   border: 1px solid var(--site-border-strong);
   border-radius: 22px;
   background: color-mix(in srgb, #020617 92%, transparent);
-}
-
-:root[data-docs-theme="light"] .code-block {
-  background: #0f172a;
 }
 
 .code-block-head {

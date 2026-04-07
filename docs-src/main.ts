@@ -16,6 +16,8 @@ import { exampleDemos, featuredVariants } from './data/snippets';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 const cleanupTasks = new Set<() => void>();
+const DOCS_THEME_STORAGE_KEY = 'revivejs-loading-docs-theme';
+type DocsTheme = 'light' | 'dark';
 
 function getRoute(): string {
   const normalized = window.location.hash.replace(/^#\/?/, '').trim();
@@ -36,7 +38,7 @@ function renderSidebar(currentSlug: string): string {
           <span class="brand-badge"></span>
           <span class="brand-title">@revivejs/loading</span>
         </a>
-        <button class="sidebar-theme" type="button" data-theme-toggle>Toggle theme</button>
+        <button class="sidebar-theme" type="button" data-theme-toggle>Theme</button>
       </div>
       <nav>
         ${navigation
@@ -66,7 +68,7 @@ function renderHeader(): string {
   return `
     <header class="site-header">
       <button class="mobile-nav-toggle" type="button" data-nav-toggle>Menu</button>
-      <button class="sidebar-theme" type="button" data-theme-toggle>Toggle theme</button>
+      <button class="sidebar-theme" type="button" data-theme-toggle>Theme</button>
     </header>
   `;
 }
@@ -101,6 +103,7 @@ function renderPage(): void {
   window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   bindStaticInteractions();
   mountInteractiveBlocks();
+  syncThemeToggleButtons();
 }
 
 function bindStaticInteractions(): void {
@@ -234,10 +237,30 @@ function mountInteractiveBlocks(): void {
   });
 }
 
-function applyDocsTheme(theme: 'light' | 'dark'): void {
+function getDocsThemeButtonLabel(theme: DocsTheme): string {
+  return theme === 'light' ? 'Dark mode' : 'Light mode';
+}
+
+function syncThemeToggleButtons(): void {
+  const currentTheme = document.documentElement.dataset.docsTheme === 'dark' ? 'dark' : 'light';
+  const nextLabel = getDocsThemeButtonLabel(currentTheme);
+
+  document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]').forEach((button) => {
+    button.textContent = nextLabel;
+    button.setAttribute('aria-label', `Switch to ${nextLabel.toLowerCase()}`);
+    button.setAttribute('title', `Switch to ${nextLabel.toLowerCase()}`);
+    button.setAttribute('aria-pressed', currentTheme === 'dark' ? 'true' : 'false');
+  });
+}
+
+function applyDocsTheme(theme: DocsTheme): void {
   document.documentElement.dataset.docsTheme = theme;
   applyThemeTokens(document.documentElement, theme === 'light' ? lightTheme : darkTheme);
-  window.localStorage.setItem('revivejs-loading-docs-theme', theme);
+  window.localStorage.setItem(DOCS_THEME_STORAGE_KEY, theme);
+  document
+    .querySelector<HTMLMetaElement>('meta[name="theme-color"]')
+    ?.setAttribute('content', theme === 'light' ? '#f7fafc' : '#08111f');
+  syncThemeToggleButtons();
 }
 
 function toggleTheme(): void {
@@ -246,8 +269,8 @@ function toggleTheme(): void {
 }
 
 function bootTheme(): void {
-  const stored = window.localStorage.getItem('revivejs-loading-docs-theme');
-  applyDocsTheme(stored === 'light' ? 'light' : 'dark');
+  const stored = window.localStorage.getItem(DOCS_THEME_STORAGE_KEY);
+  applyDocsTheme(stored === 'dark' ? 'dark' : 'light');
 }
 
 bootTheme();
