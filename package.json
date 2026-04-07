@@ -1,0 +1,97 @@
+{
+  "name": "@revivejs/loading",
+  "version": "0.1.0",
+  "description": "Framework-agnostic TypeScript loading toolkit with spinners, overlays, skeletons, shimmer loaders, and smart anti-flicker behavior.",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite --config vite.config.ts",
+    "build": "npm run build:lib && npm run build:docs",
+    "build:lib": "tsup --config tsup.config.ts",
+    "build:docs": "vite build --config vite.config.ts",
+    "preview:docs": "vite preview --config vite.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandroit/loading.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "loading",
+    "loader",
+    "loading-state",
+    "loading-indicator",
+    "loading-overlay",
+    "loading-spinner",
+    "fullscreen-loader",
+    "inline-loader",
+    "button-loader",
+    "section-loader",
+    "skeleton-loader",
+    "shimmer-loader",
+    "progress-indicator",
+    "spinner",
+    "dots-loader",
+    "bars-loader",
+    "pulse-loader",
+    "overlay",
+    "fullscreen",
+    "skeleton",
+    "shimmer",
+    "typescript",
+    "javascript",
+    "vanilla-js",
+    "dom",
+    "esm",
+    "cjs",
+    "tree-shakeable",
+    "framework-agnostic",
+    "ui",
+    "design-system",
+    "web-app",
+    "dashboard",
+    "accessibility",
+    "aria-live",
+    "reduced-motion",
+    "css-variables",
+    "themeable",
+    "docs",
+    "toolkit"
+  ],
+  "author": "Alexandro Marques",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexandroit/loading/issues"
+  },
+  "homepage": "https://alexandroit.github.io/loading/",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "jsdom": "^26.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}
