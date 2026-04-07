@@ -11,7 +11,7 @@
 
 **[Documentation & Playground](https://alexandroit.github.io/loading/)** | **[npm](https://www.npmjs.com/package/@revivejs/loading)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
 
-**Latest version:** `0.1.0`
+**Latest version:** `0.1.1`
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "@revivejs/loading",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Framework-agnostic TypeScript loading toolkit with spinners, overlays, skeletons, shimmer loaders, and smart anti-flicker behavior.",
   "type": "module",
   "main": "dist/index.cjs",
