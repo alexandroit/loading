@@ -16,7 +16,7 @@ import { exampleDemos, featuredVariants } from './data/snippets';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 const cleanupTasks = new Set<() => void>();
-const DOCS_THEME_STORAGE_KEY = 'revivejs-loading-docs-theme';
+const DOCS_THEME_STORAGE_KEY = 'stackline-loading-docs-theme';
 type DocsTheme = 'light' | 'dark';
 
 function getRoute(): string {
