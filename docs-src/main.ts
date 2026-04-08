@@ -9,7 +9,7 @@ import {
   loaderVariants,
   type LoaderInstance,
   type LoaderVariant
-} from '@revivejs/loading';
+} from '@stackline/loading';
 import { mountPlayground } from './components/playground';
 import { docsPages, navigation } from './content/pages';
 import { exampleDemos, featuredVariants } from './data/snippets';
@@ -36,7 +36,7 @@ function renderSidebar(currentSlug: string): string {
       <div class="sidebar-meta">
         <a class="brand-mark" href="#/playground">
           <span class="brand-badge"></span>
-          <span class="brand-title">@revivejs/loading</span>
+          <span class="brand-title">@stackline/loading</span>
         </a>
         <button class="sidebar-theme" type="button" data-theme-toggle>Theme</button>
       </div>

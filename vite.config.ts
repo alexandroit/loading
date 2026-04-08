@@ -7,7 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@docs': resolve(__dirname, 'docs-src'),
-      '@revivejs/loading': resolve(__dirname, 'src/index.ts')
+      '@stackline/loading': resolve(__dirname, 'src/index.ts')
     }
   },
   build: {

@@ -1,4 +1,4 @@
-import { createLoader } from '@revivejs/loading';
+import { createLoader } from '@stackline/loading';
 
 const loader = createLoader({
   variant: 'vortex',

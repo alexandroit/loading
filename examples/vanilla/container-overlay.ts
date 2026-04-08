@@ -1,4 +1,4 @@
-import { createLoader } from '@revivejs/loading';
+import { createLoader } from '@stackline/loading';
 
 const section = document.querySelector<HTMLElement>('[data-table-section]');
 

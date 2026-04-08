@@ -1,4 +1,4 @@
-import type { LoaderOptions, LoaderVariant } from '@revivejs/loading';
+import type { LoaderOptions, LoaderVariant } from '@stackline/loading';
 
 export interface ExampleDemo {
   id: string;
@@ -20,8 +20,8 @@ export const featuredVariants: LoaderVariant[] = [
 ];
 
 export const snippets = {
-  install: `npm install @revivejs/loading`,
-  quickStart: `import { createLoader } from '@revivejs/loading';
+  install: `npm install @stackline/loading`,
+  quickStart: `import { createLoader } from '@stackline/loading';
 
 const card = document.querySelector('.sales-card');
 
@@ -40,7 +40,7 @@ loader.show();
 fetch('/api/revenue')
   .finally(() => loader.hide())
   .finally(() => loader.destroy());`,
-  theme: `import { applyThemeTokens, darkTheme } from '@revivejs/loading';
+  theme: `import { applyThemeTokens, darkTheme } from '@stackline/loading';
 
 applyThemeTokens(document.documentElement, {
   ...darkTheme,

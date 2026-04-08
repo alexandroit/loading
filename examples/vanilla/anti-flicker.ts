@@ -1,4 +1,4 @@
-import { createLoader } from '@revivejs/loading';
+import { createLoader } from '@stackline/loading';
 
 const host = document.querySelector<HTMLElement>('[data-fast-request]');
 

@@ -5,7 +5,7 @@ export function resolveTarget(target: LoaderTarget, doc: Document = document): H
     const found = doc.querySelector<HTMLElement>(target);
 
     if (!found) {
-      throw new Error(`@revivejs/loading could not find target "${target}".`);
+      throw new Error(`@stackline/loading could not find target "${target}".`);
     }
 
     return found;

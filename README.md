@@ -1,15 +1,15 @@
-# @revivejs/loading
+# @stackline/loading
 
 > A maintained **framework-agnostic loading toolkit** for modern web applications, with polished variants, smart anti-flicker behavior, accessible defaults, and a documentation site with a live playground.
 
-[![npm version](https://img.shields.io/npm/v/@revivejs/loading.svg?style=flat-square)](https://www.npmjs.com/package/@revivejs/loading)
-[![npm downloads](https://img.shields.io/npm/dt/@revivejs/loading.svg?style=flat-square)](https://www.npmjs.com/package/@revivejs/loading)
-[![license](https://img.shields.io/npm/l/@revivejs/loading.svg?style=flat-square)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@stackline/loading.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/loading)
+[![npm downloads](https://img.shields.io/npm/dt/@stackline/loading.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/loading)
+[![license](https://img.shields.io/npm/l/@stackline/loading.svg?style=flat-square)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
-[![ESM + CJS](https://img.shields.io/badge/Build-ESM%20%2B%20CJS-111827?style=flat-square)](https://www.npmjs.com/package/@revivejs/loading)
+[![ESM + CJS](https://img.shields.io/badge/Build-ESM%20%2B%20CJS-111827?style=flat-square)](https://www.npmjs.com/package/@stackline/loading)
 [![Docs](https://img.shields.io/badge/Docs-Playground%20%26%20Guides-0f172a?style=flat-square)](https://alexandroit.github.io/loading/)
 
-**[Documentation & Playground](https://alexandroit.github.io/loading/)** | **[npm](https://www.npmjs.com/package/@revivejs/loading)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
+**[Documentation & Playground](https://alexandroit.github.io/loading/)** | **[npm](https://www.npmjs.com/package/@stackline/loading)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
 
 **Latest version:** `0.1.1`
 
@@ -24,7 +24,7 @@ Most loading packages stop at a basic spinner. Real products need more:
 - accessible defaults with labels, `role="status"`, `aria-live`, and reduced-motion support
 - themeability through CSS variables without bringing a framework wrapper into the core package
 
-`@revivejs/loading` is built as a DOM-first TypeScript library that stays focused on the core runtime, so future framework wrappers can stay thin and consistent.
+`@stackline/loading` is built as a DOM-first TypeScript library that stays focused on the core runtime, so future framework wrappers can stay thin and consistent.
 
 ## Features
 
@@ -60,13 +60,13 @@ Most loading packages stop at a basic spinner. Real products need more:
 ## Installation
 
 ```bash
-npm install @revivejs/loading
+npm install @stackline/loading
 ```
 
 ## Quick Start
 
 ```ts
-import { createLoader } from '@revivejs/loading';
+import { createLoader } from '@stackline/loading';
 
 const panel = document.querySelector('.analytics-panel');
 
@@ -103,7 +103,7 @@ import {
   hydrateLoaders,
   mountLoader,
   showLoader
-} from '@revivejs/loading';
+} from '@stackline/loading';
 ```
 
 Core runtime capabilities:

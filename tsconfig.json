@@ -21,10 +21,10 @@
     "exactOptionalPropertyTypes": true,
     "baseUrl": ".",
     "paths": {
-      "@revivejs/loading": [
+      "@stackline/loading": [
         "./src/index.ts"
       ],
-      "@revivejs/loading/*": [
+      "@stackline/loading/*": [
         "./src/*"
       ]
     }

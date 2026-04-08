@@ -1,6 +1,6 @@
 # Examples
 
-These examples show how to use `@revivejs/loading` in real product surfaces without depending on a framework wrapper.
+These examples show how to use `@stackline/loading` in real product surfaces without depending on a framework wrapper.
 
 - [`dashboard-card.ts`](./vanilla/dashboard-card.ts): card overlay for KPI refresh
 - [`button-loading.ts`](./vanilla/button-loading.ts): inline button state while a form submits

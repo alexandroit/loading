@@ -4,7 +4,7 @@ import {
   type LoaderOptions,
   type LoaderVariant,
   loaderVariants
-} from '@revivejs/loading';
+} from '@stackline/loading';
 
 interface PlaygroundState {
   variant: LoaderVariant;

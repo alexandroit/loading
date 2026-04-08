@@ -38,7 +38,7 @@ class DOMLoader implements LoaderInstance {
 
   constructor(options: LoaderOptions = {}) {
     if (!canUseDOM()) {
-      throw new Error('@revivejs/loading requires a browser-like DOM to create loaders.');
+      throw new Error('@stackline/loading requires a browser-like DOM to create loaders.');
     }
 
     this.options = normalizeLoaderOptions(options);
@@ -330,7 +330,7 @@ class DOMLoader implements LoaderInstance {
 
   private assertAlive(): void {
     if (this.state.destroyed) {
-      throw new Error('@revivejs/loading cannot operate on a destroyed loader.');
+      throw new Error('@stackline/loading cannot operate on a destroyed loader.');
     }
   }
 }
