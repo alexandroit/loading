@@ -147,7 +147,7 @@ function parseOptions(element: HTMLElement): LoaderOptions {
 }
 
 export function hydrateLoaders(root: ParentNode = document): LoaderInstance[] {
-  const hosts = Array.from(root.querySelectorAll<HTMLElement>('[data-revive-loading]'));
+  const hosts = Array.from(root.querySelectorAll<HTMLElement>('[data-stackline-loading]'));
 
   return hosts.map((host) => {
     const loader = createLoader({

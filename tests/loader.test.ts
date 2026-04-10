@@ -85,7 +85,7 @@ describe('@stackline/loading', () => {
   it('hydrates declarative loaders from data attributes', async () => {
     document.body.innerHTML = `
       <div
-        data-revive-loading
+        data-stackline-loading
         data-loader-variant="typing-dots"
         data-loader-inline="true"
         data-loader-visible="true"
