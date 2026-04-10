@@ -1,0 +1,34 @@
+@stackline/loading 0.1.1
+
+Browser bundle download
+=======================
+
+This folder is for browser applications that want to use the loading toolkit without npm.
+
+Files
+-----
+- loading.browser.js
+- LICENSE
+- README.md
+
+Script tag usage
+----------------
+<section id="loader-host" style="min-height: 160px; position: relative;"></section>
+<script src="./loading.browser.js"></script>
+<script>
+  const host = document.getElementById("loader-host");
+  const loader = StacklineLoading.createLoader({
+    variant: "orbit",
+    overlay: true,
+    centered: true,
+    size: 48,
+    label: "Loading analytics"
+  });
+
+  loader.mount(host);
+  loader.show();
+</script>
+
+Global name
+-----------
+window.StacklineLoading

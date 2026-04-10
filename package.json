@@ -24,6 +24,8 @@
   "scripts": {
     "dev": "vite --config vite.config.ts",
     "build": "npm run build:lib && npm run build:docs",
+    "build:download": "node scripts/build-download.mjs",
+    "build:all": "npm run build && npm run build:download",
     "build:lib": "tsup --config tsup.config.ts",
     "build:docs": "vite build --config vite.config.ts",
     "preview:docs": "vite preview --config vite.config.ts",

@@ -174,6 +174,29 @@ export const docsPages: DocsPage[] = [
         `
       )}
       ${section(
+        'Use pure JavaScript from GitHub',
+        `
+          <p>If you do not want npm in the host project, download the browser bundle from GitHub and load it with a script tag.</p>
+          <p><a class="button-secondary" href="https://github.com/alexandroit/loading/tree/main/downloads" target="_blank" rel="noreferrer">Open GitHub download bundle</a></p>
+          ${codeBlock('script tag', `<section id="loader-host" style="min-height: 160px; position: relative;"></section>
+<script src="./loading.browser.js"></script>
+<script>
+  const host = document.getElementById("loader-host");
+  const loader = StacklineLoading.createLoader({
+    variant: "orbit",
+    overlay: true,
+    centered: true,
+    size: 48,
+    label: "Loading analytics"
+  });
+
+  loader.mount(host);
+  loader.show();
+</script>`, 'html')}
+          <p>The browser bundle exposes <code>window.StacklineLoading</code> and injects the loader styles automatically at runtime.</p>
+        `
+      )}
+      ${section(
         'What ships in the package',
         `
           <ul class="content-list">
