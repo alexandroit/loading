@@ -7,9 +7,9 @@
 [![license](https://img.shields.io/npm/l/@stackline/loading.svg?style=flat-square)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
 [![ESM + CJS](https://img.shields.io/badge/Build-ESM%20%2B%20CJS-111827?style=flat-square)](https://www.npmjs.com/package/@stackline/loading)
-[![Docs](https://img.shields.io/badge/Docs-Playground%20%26%20Guides-0f172a?style=flat-square)](https://alexandroit.github.io/loading/)
+[![Docs](https://img.shields.io/badge/Docs-Playground%20%26%20Guides-0f172a?style=flat-square)](https://alexandro.net/docs/vanilla/loading/)
 
-**[Documentation & Playground](https://alexandroit.github.io/loading/)** | **[npm](https://www.npmjs.com/package/@stackline/loading)** | **[GitHub Download](https://github.com/alexandroit/loading/tree/main/downloads)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
+**[Documentation & Playground](https://alexandro.net/docs/vanilla/loading/)** | **[npm](https://www.npmjs.com/package/@stackline/loading)** | **[GitHub Download](https://github.com/alexandroit/loading/tree/main/downloads)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
 
 **Latest version:** `0.1.1`
 
@@ -198,7 +198,7 @@ The docs site includes:
 - delay and minimum visibility guidance
 - a live playground for variant, size, speed, color, and behavior testing
 
-Docs: `https://alexandroit.github.io/loading/`
+Docs: `https://alexandro.net/docs/vanilla/loading/`
 
 ## Run Locally
 

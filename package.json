@@ -87,7 +87,7 @@
   "bugs": {
     "url": "https://github.com/alexandroit/loading/issues"
   },
-  "homepage": "https://alexandroit.github.io/loading/",
+  "homepage": "https://alexandro.net/docs/vanilla/loading/",
   "devDependencies": {
     "@types/node": "^20.0.0",
     "jsdom": "^26.0.0",
