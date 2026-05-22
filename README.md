@@ -1,15 +1,15 @@
-# @stackline/loading
+# @stackline/loading-core
 
 > A maintained **framework-agnostic loading toolkit** for modern web applications, with polished variants, smart anti-flicker behavior, accessible defaults, and a documentation site with a live playground.
 
-[![npm version](https://img.shields.io/npm/v/@stackline/loading.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/loading)
-[![npm downloads](https://img.shields.io/npm/dt/@stackline/loading.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/loading)
-[![license](https://img.shields.io/npm/l/@stackline/loading.svg?style=flat-square)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@stackline/loading-core.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/loading-core)
+[![npm downloads](https://img.shields.io/npm/dt/@stackline/loading-core.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/loading-core)
+[![license](https://img.shields.io/npm/l/@stackline/loading-core.svg?style=flat-square)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
-[![ESM + CJS](https://img.shields.io/badge/Build-ESM%20%2B%20CJS-111827?style=flat-square)](https://www.npmjs.com/package/@stackline/loading)
+[![ESM + CJS](https://img.shields.io/badge/Build-ESM%20%2B%20CJS-111827?style=flat-square)](https://www.npmjs.com/package/@stackline/loading-core)
 [![Docs](https://img.shields.io/badge/Docs-Playground%20%26%20Guides-0f172a?style=flat-square)](https://alexandro.net/docs/vanilla/loading/)
 
-**[Documentation & Playground](https://alexandro.net/docs/vanilla/loading/)** | **[npm](https://www.npmjs.com/package/@stackline/loading)** | **[GitHub Download](https://github.com/alexandroit/loading/tree/main/downloads)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
+**[Documentation & Playground](https://alexandro.net/docs/vanilla/loading/)** | **[npm](https://www.npmjs.com/package/@stackline/loading-core)** | **[GitHub Download](https://github.com/alexandroit/loading/tree/main/downloads)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
 
 **Latest version:** `1.0.0`
 
@@ -24,7 +24,7 @@ Most loading packages stop at a basic spinner. Real products need more:
 - accessible defaults with labels, `role="status"`, `aria-live`, and reduced-motion support
 - themeability through CSS variables without bringing a framework wrapper into the core package
 
-`@stackline/loading` is built as a DOM-first TypeScript library that stays focused on the core runtime, so future framework wrappers can stay thin and consistent.
+`@stackline/loading-core` is built as a DOM-first TypeScript library that stays focused on the core runtime, so future framework wrappers can stay thin and consistent.
 
 Version `1.0.0` marks the stable baseline for the loader runtime, built-in variants, smart visibility controls, TypeScript types, browser bundle, and generated documentation.
 
@@ -63,7 +63,7 @@ Version `1.0.0` marks the stable baseline for the loader runtime, built-in varia
 ## Installation
 
 ```bash
-npm install @stackline/loading
+npm install @stackline/loading-core
 ```
 
 ## Direct Download
@@ -95,7 +95,7 @@ The archive includes `loading.browser.js` and exposes `window.StacklineLoading`.
 ## Quick Start
 
 ```ts
-import { createLoader } from '@stackline/loading';
+import { createLoader } from '@stackline/loading-core';
 
 const panel = document.querySelector('.analytics-panel');
 
@@ -132,7 +132,7 @@ import {
   hydrateLoaders,
   mountLoader,
   showLoader
-} from '@stackline/loading';
+} from '@stackline/loading-core';
 ```
 
 Core runtime capabilities:

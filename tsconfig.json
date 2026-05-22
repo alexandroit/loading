@@ -21,10 +21,10 @@
     "exactOptionalPropertyTypes": true,
     "baseUrl": ".",
     "paths": {
-      "@stackline/loading": [
+      "@stackline/loading-core": [
         "./src/index.ts"
       ],
-      "@stackline/loading/*": [
+      "@stackline/loading-core/*": [
         "./src/*"
       ]
     }

@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { createLoader, hydrateLoaders } from '../src';
 
-describe('@stackline/loading', () => {
+describe('@stackline/loading-core', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
     document.head

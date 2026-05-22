@@ -1,4 +1,4 @@
-import { createLoader } from '@stackline/loading';
+import { createLoader } from '@stackline/loading-core';
 
 const button = document.querySelector<HTMLButtonElement>('[data-save-button]');
 

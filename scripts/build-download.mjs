@@ -12,12 +12,12 @@ const rootDir = path.resolve(__dirname, "..");
 const packageJson = JSON.parse(await fs.readFile(path.join(rootDir, "package.json"), "utf8"));
 const version = packageJson.version;
 const downloadRootDir = path.join(rootDir, "downloads");
-const bundleDirName = `stackline-loading-${version}`;
+const bundleDirName = `stackline-loading-core-${version}`;
 const bundleDir = path.join(downloadRootDir, bundleDirName);
 const zipPath = path.join(downloadRootDir, `${bundleDirName}.zip`);
 const browserBundlePath = path.join(bundleDir, "loading.browser.js");
 
-const installGuide = `@stackline/loading ${version}
+const installGuide = `@stackline/loading-core ${version}
 
 Browser bundle download
 =======================
@@ -55,7 +55,7 @@ window.StacklineLoading
 
 const downloadReadme = `# GitHub Downloads
 
-This directory contains browser-ready downloads for developers who want to use \`@stackline/loading\` with plain JavaScript.
+This directory contains browser-ready downloads for developers who want to use \`@stackline/loading-core\` with plain JavaScript.
 
 Current version:
 

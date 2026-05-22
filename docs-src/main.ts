@@ -9,14 +9,14 @@ import {
   loaderVariants,
   type LoaderInstance,
   type LoaderVariant
-} from '@stackline/loading';
+} from '@stackline/loading-core';
 import { mountPlayground } from './components/playground';
 import { docsPages, navigation } from './content/pages';
 import { exampleDemos, featuredVariants } from './data/snippets';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 const cleanupTasks = new Set<() => void>();
-const DOCS_THEME_STORAGE_KEY = 'stackline-loading-docs-theme';
+const DOCS_THEME_STORAGE_KEY = 'stackline-loading-core-docs-theme';
 type DocsTheme = 'light' | 'dark';
 
 function getRoute(): string {
@@ -36,7 +36,7 @@ function renderSidebar(currentSlug: string): string {
       <div class="sidebar-meta">
         <a class="brand-mark" href="#/playground">
           <span class="brand-badge"></span>
-          <span class="brand-title">@stackline/loading</span>
+          <span class="brand-title">@stackline/loading-core</span>
         </a>
         <button class="sidebar-theme" type="button" data-theme-toggle>Theme</button>
       </div>

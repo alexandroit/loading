@@ -1,4 +1,4 @@
-import type { LoaderOptions, LoaderVariant } from '@stackline/loading';
+import type { LoaderOptions, LoaderVariant } from '@stackline/loading-core';
 
 export interface ExampleDemo {
   id: string;
@@ -20,8 +20,8 @@ export const featuredVariants: LoaderVariant[] = [
 ];
 
 export const snippets = {
-  install: `npm install @stackline/loading`,
-  quickStart: `import { createLoader } from '@stackline/loading';
+  install: `npm install @stackline/loading-core`,
+  quickStart: `import { createLoader } from '@stackline/loading-core';
 
 const card = document.querySelector('.sales-card');
 
@@ -40,7 +40,7 @@ loader.show();
 fetch('/api/revenue')
   .finally(() => loader.hide())
   .finally(() => loader.destroy());`,
-  theme: `import { applyThemeTokens, darkTheme } from '@stackline/loading';
+  theme: `import { applyThemeTokens, darkTheme } from '@stackline/loading-core';
 
 applyThemeTokens(document.documentElement, {
   ...darkTheme,

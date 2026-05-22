@@ -1,4 +1,4 @@
-import { createLoader } from '@stackline/loading';
+import { createLoader } from '@stackline/loading-core';
 
 const host = document.querySelector<HTMLElement>('[data-fast-request]');
 

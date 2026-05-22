@@ -80,7 +80,7 @@ const apiTable = `
 export const docsPages: DocsPage[] = [
   {
     slug: 'home',
-    title: '@stackline/loading',
+    title: '@stackline/loading-core',
     eyebrow: 'Premium Loading Toolkit',
     description: 'A modern framework-agnostic loading library for overlays, buttons, cards, dashboards, and polished async UX.',
     body: `
@@ -89,7 +89,7 @@ export const docsPages: DocsPage[] = [
           <span class="badge">TypeScript first</span>
           <h1>Loading states that feel designed, not bolted on.</h1>
           <p>
-            <strong>@stackline/loading</strong> is a production-focused toolkit for modern web apps.
+            <strong>@stackline/loading-core</strong> is a production-focused toolkit for modern web apps.
             It gives you polished variants, smart delay and minimum visibility behavior, accessible defaults,
             theme tokens, and container-aware mounting APIs without tying you to a framework.
             The 1.0.0 release is the stable baseline for teams that need dependable loading states across product surfaces.

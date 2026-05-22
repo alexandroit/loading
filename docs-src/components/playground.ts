@@ -4,7 +4,7 @@ import {
   type LoaderOptions,
   type LoaderVariant,
   loaderVariants
-} from '@stackline/loading';
+} from '@stackline/loading-core';
 
 interface PlaygroundState {
   variant: LoaderVariant;

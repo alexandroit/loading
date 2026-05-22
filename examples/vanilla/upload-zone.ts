@@ -1,4 +1,4 @@
-import { createLoader } from '@stackline/loading';
+import { createLoader } from '@stackline/loading-core';
 
 const uploadZone = document.querySelector<HTMLElement>('[data-upload-zone]');
 
