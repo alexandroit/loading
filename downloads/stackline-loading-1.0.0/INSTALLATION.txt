@@ -1,4 +1,4 @@
-@stackline/loading 0.1.1
+@stackline/loading 1.0.0
 
 Browser bundle download
 =======================

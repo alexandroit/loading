@@ -92,6 +92,7 @@ export const docsPages: DocsPage[] = [
             <strong>@stackline/loading</strong> is a production-focused toolkit for modern web apps.
             It gives you polished variants, smart delay and minimum visibility behavior, accessible defaults,
             theme tokens, and container-aware mounting APIs without tying you to a framework.
+            The 1.0.0 release is the stable baseline for teams that need dependable loading states across product surfaces.
           </p>
           <div class="hero-actions">
             <a class="button-primary" href="#/quick-start">Quick start</a>

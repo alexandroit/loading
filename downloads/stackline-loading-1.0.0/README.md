@@ -11,7 +11,7 @@
 
 **[Documentation & Playground](https://alexandro.net/docs/vanilla/loading/)** | **[npm](https://www.npmjs.com/package/@stackline/loading)** | **[GitHub Download](https://github.com/alexandroit/loading/tree/main/downloads)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
 
-**Latest version:** `0.1.1`
+**Latest version:** `1.0.0`
 
 ---
 
@@ -25,6 +25,8 @@ Most loading packages stop at a basic spinner. Real products need more:
 - themeability through CSS variables without bringing a framework wrapper into the core package
 
 `@stackline/loading` is built as a DOM-first TypeScript library that stays focused on the core runtime, so future framework wrappers can stay thin and consistent.
+
+Version `1.0.0` marks the stable baseline for the loader runtime, built-in variants, smart visibility controls, TypeScript types, browser bundle, and generated documentation.
 
 ## Features
 
