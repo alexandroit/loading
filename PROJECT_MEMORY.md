@@ -43,6 +43,14 @@ The package is now published publicly as:
 @stackline/loading-core@1.0.0
 ```
 
+On 2026-05-22, the old local Verdaccio package `@stackline/loading` was unpublished with:
+
+```bash
+npm unpublish @stackline/loading --force --registry http://127.0.0.1:4873/
+```
+
+After that, installing `@stackline/loading@1.0.0` from the local Verdaccio registry correctly fails with `ETARGET`.
+
 ## Verification commands
 
 Run these from `/storage/data/github/revivejs/loading/loading`:
