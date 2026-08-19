@@ -1,18 +1,20 @@
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 
+const rootDir = import.meta.dirname;
+
 export default defineConfig({
   base: './',
-  root: resolve(__dirname, 'docs-src'),
+  root: resolve(rootDir, 'docs-src'),
   resolve: {
     alias: {
-      '@docs': resolve(__dirname, 'docs-src'),
-      '@stackline/loading-core': resolve(__dirname, 'src/index.ts')
+      '@docs': resolve(rootDir, 'docs-src'),
+      '@stackline/loading-core': resolve(rootDir, 'src/index.ts')
     }
   },
   build: {
     emptyOutDir: true,
-    outDir: resolve(__dirname, 'docs'),
+    outDir: resolve(rootDir, 'docs'),
     sourcemap: true
   },
   server: {

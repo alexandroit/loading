@@ -1,4 +1,4 @@
-var _=Object.defineProperty;var Q=(e,r,a)=>r in e?_(e,r,{enumerable:!0,configurable:!0,writable:!0,value:a}):e[r]=a;var c=(e,r,a)=>Q(e,typeof r!="symbol"?r+"":r,a);(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))t(i);new MutationObserver(i=>{for(const l of i)if(l.type==="childList")for(const n of l.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&t(n)}).observe(document,{childList:!0,subtree:!0});function a(i){const l={};return i.integrity&&(l.integrity=i.integrity),i.referrerPolicy&&(l.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?l.credentials="include":i.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function t(i){if(i.ep)return;i.ep=!0;const l=a(i);fetch(i.href,l)}})();function g(e,r,a){return Math.min(Math.max(e,r),a)}function y(e,r){return typeof e!="number"||Number.isNaN(e)?r:Math.max(0,e)}const B={ring:{value:"ring",label:"Ring",category:"spinner",description:"A refined circular spinner for general loading states.",recommendedUse:"Use for default async states inside cards, panels, and centered sections.",defaultCount:1,minCount:1,maxCount:1},"dual-ring":{value:"dual-ring",label:"Dual Ring",category:"spinner",description:"Two concentric rings rotating in opposite directions for more visual energy.",recommendedUse:"Use when you want a richer spinner without overwhelming compact layouts.",defaultCount:2,minCount:2,maxCount:2},"segmented-ring":{value:"segmented-ring",label:"Segmented Ring",category:"spinner",description:"A segmented circular loader with precise ticks and premium motion.",recommendedUse:"Use when you want a polished technical spinner for dashboards, analytics, or admin tools.",defaultCount:10,minCount:6,maxCount:12},arc:{value:"arc",label:"Arc",category:"spinner",description:"A thick curved sweep with strong motion and excellent legibility.",recommendedUse:"Use on dashboards or surfaces where the loader needs a bold silhouette.",defaultCount:1,minCount:1,maxCount:1},orbit:{value:"orbit",label:"Orbit",category:"spinner",description:"A premium orbital motion with a stable central anchor.",recommendedUse:"Use in hero states, polished overlays, or brand-forward experiences.",defaultCount:2,minCount:2,maxCount:2},comet:{value:"comet",label:"Comet",category:"spinner",description:"A luminous point with a trailing comet tail orbiting a soft ring.",recommendedUse:"Use for premium hero states, modal loading, and brand-forward async moments.",defaultCount:2,minCount:2,maxCount:2},halo:{value:"halo",label:"Halo",category:"spinner",description:"A thin halo with soft glow pulses and minimal visual noise.",recommendedUse:"Use in refined enterprise interfaces where the loading state should stay elegant.",defaultCount:2,minCount:2,maxCount:2},radar:{value:"radar",label:"Radar",category:"spinner",description:"A scanning beam effect with layered depth.",recommendedUse:"Use for search, sync, telemetry, or data discovery moments.",defaultCount:3,minCount:3,maxCount:3},astronaut:{value:"astronaut",label:"Astronaut",category:"surface",description:"A floating astronaut illustration with soft starfield motion.",recommendedUse:"Use for onboarding, empty states, playful overlays, and premium loading moments.",defaultCount:3,minCount:3,maxCount:3},"astronaut-to-mars":{value:"astronaut-to-mars",label:"Astronaut To Mars",category:"surface",description:"A tiny astronaut traveling toward Mars with a cinematic space-route feel.",recommendedUse:"Use for route transitions, splash states, and standout brand-forward loading sequences.",defaultCount:4,minCount:4,maxCount:4},"baseball-player":{value:"baseball-player",label:"Baseball Player",category:"surface",description:"A batter driving the ball with a clean swing and curved flight path.",recommendedUse:"Use for sports products, onboarding, and illustrative loading states with momentum.",defaultCount:4,minCount:4,maxCount:4},"football-player":{value:"football-player",label:"Football Player",category:"surface",description:"A footballer striking the ball forward with a smooth kick arc.",recommendedUse:"Use for soccer experiences, score views, and highly expressive loading moments.",defaultCount:4,minCount:4,maxCount:4},galaxy:{value:"galaxy",label:"Galaxy",category:"surface",description:"A glowing spiral galaxy with a bright core, orbiting stars, and drifting cosmic dust.",recommendedUse:"Use for splash screens, premium hero states, sci-fi interfaces, and high-drama loading moments.",defaultCount:6,minCount:6,maxCount:6},pulse:{value:"pulse",label:"Pulse",category:"surface",description:"A breathing pulse with soft echo rings.",recommendedUse:"Use for ambient loading and low-noise inline states.",defaultCount:2,minCount:2,maxCount:2},"wave-dots":{value:"wave-dots",label:"Wave Dots",category:"dots",description:"Dots that ripple upward in sequence.",recommendedUse:"Use for conversational UIs, message streams, and compact inline feedback.",defaultCount:4,minCount:3,maxCount:8},"bouncing-dots":{value:"bouncing-dots",label:"Bouncing Dots",category:"dots",description:"Classic dot rhythm with a more premium bounce curve.",recommendedUse:"Use for buttons, compact surfaces, and general-purpose text-adjacent loading.",defaultCount:3,minCount:3,maxCount:8},"typing-dots":{value:"typing-dots",label:"Typing Dots",category:"dots",description:"A staggered fade-and-scale sequence inspired by chat typing indicators.",recommendedUse:"Use in assistants, feeds, or message composer feedback states.",defaultCount:3,minCount:3,maxCount:5},"grid-pulse":{value:"grid-pulse",label:"Grid Pulse",category:"surface",description:"A 3x3 pulse grid that feels structured, compact, and modern.",recommendedUse:"Use for compact surfaces, icon-scale loading, and data-heavy interface chrome.",defaultCount:9,minCount:9,maxCount:9},"magnetic-dots":{value:"magnetic-dots",label:"Magnetic Dots",category:"dots",description:"Dots that pull toward the center and relax outward in a magnetic rhythm.",recommendedUse:"Use for inline controls, button states, and compact polished micro-feedback.",defaultCount:4,minCount:3,maxCount:6},"spiral-dots":{value:"spiral-dots",label:"Spiral Dots",category:"dots",description:"Layered dots arranged in a rotating spiral with subtle depth.",recommendedUse:"Use for premium overlays and loaders that should feel more bespoke than a standard spinner.",defaultCount:6,minCount:5,maxCount:8},constellation:{value:"constellation",label:"Constellation",category:"dots",description:"Network-like nodes with a soft connected-system feel.",recommendedUse:"Use for AI, search, sync, and graph-oriented product experiences.",defaultCount:6,minCount:5,maxCount:6},"equalizer-bars":{value:"equalizer-bars",label:"Equalizer Bars",category:"bars",description:"Animated bars with an audio-like rhythm.",recommendedUse:"Use for analytics, media, and lively data surfaces.",defaultCount:5,minCount:3,maxCount:8},"rising-bars":{value:"rising-bars",label:"Rising Bars",category:"bars",description:"Clean bars that rise from a subtle track.",recommendedUse:"Use in tables, forms, and panels where you want linear motion.",defaultCount:4,minCount:3,maxCount:8},shimmer:{value:"shimmer",label:"Shimmer",category:"surface",description:"A modern skeleton-like shimmer strip.",recommendedUse:"Use for content placeholders, cards, and container-level loading.",defaultCount:1,minCount:1,maxCount:1},"scan-line":{value:"scan-line",label:"Scan Line",category:"surface",description:"A scanning line that sweeps across a clean data surface.",recommendedUse:"Use for tables, data panes, security-style scans, and content inspection states.",defaultCount:1,minCount:1,maxCount:1},"liquid-pill":{value:"liquid-pill",label:"Liquid Pill",category:"surface",description:"A rounded pill loader with fluid motion and soft internal glow.",recommendedUse:"Use for buttons, compact forms, and ambient inline loading with branded motion.",defaultCount:2,minCount:2,maxCount:2},"ripple-stack":{value:"ripple-stack",label:"Ripple Stack",category:"surface",description:"Concentric ripples that radiate outward with a calm layered cadence.",recommendedUse:"Use for overlays, fullscreen states, and soft-focus loading moments.",defaultCount:3,minCount:3,maxCount:4},"minimal-spinner":{value:"minimal-spinner",label:"Minimal Spinner",category:"spinner",description:"A thin understated spinner with understated motion.",recommendedUse:"Use where UI chrome should stay quiet and elegant.",defaultCount:1,minCount:1,maxCount:1},"neon-spinner":{value:"neon-spinner",label:"Neon Spinner",category:"spinner",description:"A glowing spinner with high-contrast accents.",recommendedUse:"Use in dark surfaces, product tours, and expressive brand moments.",defaultCount:2,minCount:2,maxCount:2},"glass-spinner":{value:"glass-spinner",label:"Glass Spinner",category:"spinner",description:"A frosted, translucent spinner with soft highlights.",recommendedUse:"Use on overlays and premium surface treatments.",defaultCount:2,minCount:2,maxCount:2},vortex:{value:"vortex",label:"Vortex",category:"spinner",description:"Multiple rotating elements that create a layered vortex effect.",recommendedUse:"Use for major loading transitions, modals, and splash states.",defaultCount:3,minCount:3,maxCount:3},cube:{value:"cube",label:"Cube",category:"surface",description:"Rotating geometric blocks with a clean enterprise-friendly feel.",recommendedUse:"Use in dashboards, admin tools, and product surfaces with grid structure.",defaultCount:4,minCount:4,maxCount:4},diamond:{value:"diamond",label:"Diamond",category:"surface",description:"Four angular facets that pulse in a diamond pattern.",recommendedUse:"Use when you want geometric motion that still feels compact.",defaultCount:4,minCount:4,maxCount:4},prism:{value:"prism",label:"Prism",category:"surface",description:"Glass-like prism shards rotating with translucent layered highlights.",recommendedUse:"Use on premium overlays, polished product shells, and modern dark themes.",defaultCount:3,minCount:3,maxCount:3},"skeleton-blocks":{value:"skeleton-blocks",label:"Skeleton Blocks",category:"surface",description:"A compact skeleton-style block layout with animated shimmer passes.",recommendedUse:"Use for content placeholders, side panels, cards, and list loading states.",defaultCount:4,minCount:4,maxCount:4}},H=Object.values(B);function k(e){return B[e]}function Z(e,r){const a=k(e);return g(r.count??a.defaultCount,a.minCount,a.maxCount)}function E(e,r){const a=e??r;return typeof a=="number"?`${a}px`:a}function J(e){return e.replace(/[A-Z]/g,r=>`-${r.toLowerCase()}`)}function ee(e,r){Object.entries(r).forEach(([a,t])=>{const i=a.startsWith("--")?a:J(a);if(t==null){e.style.removeProperty(i);return}e.style.setProperty(i,re(t))})}function re(e){return typeof e=="number"?String(e):e??""}function ae(e,r){const a=e.replace("#","").trim(),t=a.length===3?a.split("").map(h=>`${h}${h}`).join(""):a.length===4?a.split("").map(h=>`${h}${h}`).join(""):a;if(t.length!==6&&t.length!==8)return`color-mix(in srgb, ${e} ${Math.round(r*100)}%, transparent)`;const i=parseInt(t.slice(0,2),16),l=parseInt(t.slice(2,4),16),n=parseInt(t.slice(4,6),16),u=t.length===8?parseInt(t.slice(6,8),16)/255:1;return`rgba(${i}, ${l}, ${n}, ${Math.max(0,Math.min(1,u*r))})`}function te(e,r){const a=e.replace(/rgba?\(/,"").replace(")","").split(",").map(t=>t.trim());return a.length<3?`color-mix(in srgb, ${e} ${Math.round(r*100)}%, transparent)`:`rgba(${a[0]}, ${a[1]}, ${a[2]}, ${r})`}function ie(e,r){const a=Math.max(0,Math.min(1,r));return e.startsWith("#")?ae(e,a):e.startsWith("rgb")?te(e,a):`color-mix(in srgb, ${e} ${Math.round(a*100)}%, transparent)`}const s={variant:"ring",size:"40px",color:"var(--rvl-theme-color)",speed:900,thickness:3,opacity:1,background:"var(--rvl-theme-overlay)",overlay:!1,blur:12,radius:"18px",gap:8,direction:"normal",label:"",inline:!1,centered:!1,fullscreen:!1,visible:!1,delay:0,minVisible:240,zIndex:1600,className:"",ariaLive:"polite",target:null};function P(e={}){var u;const r=e.variant??s.variant,a=k(r),t=e.color??s.color,i=e.secondaryColor??ie(t,.2),l=Object.prototype.hasOwnProperty.call(e,"label"),n={variant:r,size:E(e.size,s.size),color:t,secondaryColor:i,speed:g(y(e.speed,s.speed),200,8e3),thickness:g(y(e.thickness,s.thickness),1,16),opacity:g(typeof e.opacity=="number"?e.opacity:s.opacity,.12,1),background:e.background??s.background,overlay:e.overlay??s.overlay,blur:g(y(e.blur,s.blur),0,32),radius:E(e.radius,s.radius),gap:g(y(e.gap,s.gap),0,48),count:Z(r,e),direction:e.direction??s.direction,label:l?e.label??"":s.label,inline:e.inline??s.inline,centered:e.centered??s.centered,fullscreen:e.fullscreen??s.fullscreen,visible:e.visible??s.visible,delay:g(y(e.delay,s.delay),0,3e4),minVisible:g(y(e.minVisible,s.minVisible),0,6e4),zIndex:g(y(e.zIndex,s.zIndex),1,2147483647),className:((u=e.className)==null?void 0:u.trim())??s.className,style:e.style??{},ariaLive:e.ariaLive??s.ariaLive,target:e.target??s.target};return n.fullscreen&&(n.overlay=!0,n.inline=!1,n.centered=!0),n.inline&&(n.overlay=!1,n.fullscreen=!1),!l&&!n.label&&(n.label=`Loading with ${a.label.toLowerCase()}`),n}const le=`
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();function e(e,t,n){return Math.min(Math.max(e,t),n)}function t(e,t){return typeof e!=`number`||Number.isNaN(e)?t:Math.max(0,e)}var n={ring:{value:`ring`,label:`Ring`,category:`spinner`,description:`A refined circular spinner for general loading states.`,recommendedUse:`Use for default async states inside cards, panels, and centered sections.`,defaultCount:1,minCount:1,maxCount:1},"dual-ring":{value:`dual-ring`,label:`Dual Ring`,category:`spinner`,description:`Two concentric rings rotating in opposite directions for more visual energy.`,recommendedUse:`Use when you want a richer spinner without overwhelming compact layouts.`,defaultCount:2,minCount:2,maxCount:2},"segmented-ring":{value:`segmented-ring`,label:`Segmented Ring`,category:`spinner`,description:`A segmented circular loader with precise ticks and premium motion.`,recommendedUse:`Use when you want a polished technical spinner for dashboards, analytics, or admin tools.`,defaultCount:10,minCount:6,maxCount:12},arc:{value:`arc`,label:`Arc`,category:`spinner`,description:`A thick curved sweep with strong motion and excellent legibility.`,recommendedUse:`Use on dashboards or surfaces where the loader needs a bold silhouette.`,defaultCount:1,minCount:1,maxCount:1},orbit:{value:`orbit`,label:`Orbit`,category:`spinner`,description:`A premium orbital motion with a stable central anchor.`,recommendedUse:`Use in hero states, polished overlays, or brand-forward experiences.`,defaultCount:2,minCount:2,maxCount:2},comet:{value:`comet`,label:`Comet`,category:`spinner`,description:`A luminous point with a trailing comet tail orbiting a soft ring.`,recommendedUse:`Use for premium hero states, modal loading, and brand-forward async moments.`,defaultCount:2,minCount:2,maxCount:2},halo:{value:`halo`,label:`Halo`,category:`spinner`,description:`A thin halo with soft glow pulses and minimal visual noise.`,recommendedUse:`Use in refined enterprise interfaces where the loading state should stay elegant.`,defaultCount:2,minCount:2,maxCount:2},radar:{value:`radar`,label:`Radar`,category:`spinner`,description:`A scanning beam effect with layered depth.`,recommendedUse:`Use for search, sync, telemetry, or data discovery moments.`,defaultCount:3,minCount:3,maxCount:3},astronaut:{value:`astronaut`,label:`Astronaut`,category:`surface`,description:`A floating astronaut illustration with soft starfield motion.`,recommendedUse:`Use for onboarding, empty states, playful overlays, and premium loading moments.`,defaultCount:3,minCount:3,maxCount:3},"astronaut-to-mars":{value:`astronaut-to-mars`,label:`Astronaut To Mars`,category:`surface`,description:`A tiny astronaut traveling toward Mars with a cinematic space-route feel.`,recommendedUse:`Use for route transitions, splash states, and standout brand-forward loading sequences.`,defaultCount:4,minCount:4,maxCount:4},"baseball-player":{value:`baseball-player`,label:`Baseball Player`,category:`surface`,description:`A batter driving the ball with a clean swing and curved flight path.`,recommendedUse:`Use for sports products, onboarding, and illustrative loading states with momentum.`,defaultCount:4,minCount:4,maxCount:4},"football-player":{value:`football-player`,label:`Football Player`,category:`surface`,description:`A footballer striking the ball forward with a smooth kick arc.`,recommendedUse:`Use for soccer experiences, score views, and highly expressive loading moments.`,defaultCount:4,minCount:4,maxCount:4},galaxy:{value:`galaxy`,label:`Galaxy`,category:`surface`,description:`A glowing spiral galaxy with a bright core, orbiting stars, and drifting cosmic dust.`,recommendedUse:`Use for splash screens, premium hero states, sci-fi interfaces, and high-drama loading moments.`,defaultCount:6,minCount:6,maxCount:6},pulse:{value:`pulse`,label:`Pulse`,category:`surface`,description:`A breathing pulse with soft echo rings.`,recommendedUse:`Use for ambient loading and low-noise inline states.`,defaultCount:2,minCount:2,maxCount:2},"wave-dots":{value:`wave-dots`,label:`Wave Dots`,category:`dots`,description:`Dots that ripple upward in sequence.`,recommendedUse:`Use for conversational UIs, message streams, and compact inline feedback.`,defaultCount:4,minCount:3,maxCount:8},"bouncing-dots":{value:`bouncing-dots`,label:`Bouncing Dots`,category:`dots`,description:`Classic dot rhythm with a more premium bounce curve.`,recommendedUse:`Use for buttons, compact surfaces, and general-purpose text-adjacent loading.`,defaultCount:3,minCount:3,maxCount:8},"typing-dots":{value:`typing-dots`,label:`Typing Dots`,category:`dots`,description:`A staggered fade-and-scale sequence inspired by chat typing indicators.`,recommendedUse:`Use in assistants, feeds, or message composer feedback states.`,defaultCount:3,minCount:3,maxCount:5},"grid-pulse":{value:`grid-pulse`,label:`Grid Pulse`,category:`surface`,description:`A 3x3 pulse grid that feels structured, compact, and modern.`,recommendedUse:`Use for compact surfaces, icon-scale loading, and data-heavy interface chrome.`,defaultCount:9,minCount:9,maxCount:9},"magnetic-dots":{value:`magnetic-dots`,label:`Magnetic Dots`,category:`dots`,description:`Dots that pull toward the center and relax outward in a magnetic rhythm.`,recommendedUse:`Use for inline controls, button states, and compact polished micro-feedback.`,defaultCount:4,minCount:3,maxCount:6},"spiral-dots":{value:`spiral-dots`,label:`Spiral Dots`,category:`dots`,description:`Layered dots arranged in a rotating spiral with subtle depth.`,recommendedUse:`Use for premium overlays and loaders that should feel more bespoke than a standard spinner.`,defaultCount:6,minCount:5,maxCount:8},constellation:{value:`constellation`,label:`Constellation`,category:`dots`,description:`Network-like nodes with a soft connected-system feel.`,recommendedUse:`Use for AI, search, sync, and graph-oriented product experiences.`,defaultCount:6,minCount:5,maxCount:6},"equalizer-bars":{value:`equalizer-bars`,label:`Equalizer Bars`,category:`bars`,description:`Animated bars with an audio-like rhythm.`,recommendedUse:`Use for analytics, media, and lively data surfaces.`,defaultCount:5,minCount:3,maxCount:8},"rising-bars":{value:`rising-bars`,label:`Rising Bars`,category:`bars`,description:`Clean bars that rise from a subtle track.`,recommendedUse:`Use in tables, forms, and panels where you want linear motion.`,defaultCount:4,minCount:3,maxCount:8},shimmer:{value:`shimmer`,label:`Shimmer`,category:`surface`,description:`A modern skeleton-like shimmer strip.`,recommendedUse:`Use for content placeholders, cards, and container-level loading.`,defaultCount:1,minCount:1,maxCount:1},"scan-line":{value:`scan-line`,label:`Scan Line`,category:`surface`,description:`A scanning line that sweeps across a clean data surface.`,recommendedUse:`Use for tables, data panes, security-style scans, and content inspection states.`,defaultCount:1,minCount:1,maxCount:1},"liquid-pill":{value:`liquid-pill`,label:`Liquid Pill`,category:`surface`,description:`A rounded pill loader with fluid motion and soft internal glow.`,recommendedUse:`Use for buttons, compact forms, and ambient inline loading with branded motion.`,defaultCount:2,minCount:2,maxCount:2},"ripple-stack":{value:`ripple-stack`,label:`Ripple Stack`,category:`surface`,description:`Concentric ripples that radiate outward with a calm layered cadence.`,recommendedUse:`Use for overlays, fullscreen states, and soft-focus loading moments.`,defaultCount:3,minCount:3,maxCount:4},"minimal-spinner":{value:`minimal-spinner`,label:`Minimal Spinner`,category:`spinner`,description:`A thin understated spinner with understated motion.`,recommendedUse:`Use where UI chrome should stay quiet and elegant.`,defaultCount:1,minCount:1,maxCount:1},"neon-spinner":{value:`neon-spinner`,label:`Neon Spinner`,category:`spinner`,description:`A glowing spinner with high-contrast accents.`,recommendedUse:`Use in dark surfaces, product tours, and expressive brand moments.`,defaultCount:2,minCount:2,maxCount:2},"glass-spinner":{value:`glass-spinner`,label:`Glass Spinner`,category:`spinner`,description:`A frosted, translucent spinner with soft highlights.`,recommendedUse:`Use on overlays and premium surface treatments.`,defaultCount:2,minCount:2,maxCount:2},vortex:{value:`vortex`,label:`Vortex`,category:`spinner`,description:`Multiple rotating elements that create a layered vortex effect.`,recommendedUse:`Use for major loading transitions, modals, and splash states.`,defaultCount:3,minCount:3,maxCount:3},cube:{value:`cube`,label:`Cube`,category:`surface`,description:`Rotating geometric blocks with a clean enterprise-friendly feel.`,recommendedUse:`Use in dashboards, admin tools, and product surfaces with grid structure.`,defaultCount:4,minCount:4,maxCount:4},diamond:{value:`diamond`,label:`Diamond`,category:`surface`,description:`Four angular facets that pulse in a diamond pattern.`,recommendedUse:`Use when you want geometric motion that still feels compact.`,defaultCount:4,minCount:4,maxCount:4},prism:{value:`prism`,label:`Prism`,category:`surface`,description:`Glass-like prism shards rotating with translucent layered highlights.`,recommendedUse:`Use on premium overlays, polished product shells, and modern dark themes.`,defaultCount:3,minCount:3,maxCount:3},"skeleton-blocks":{value:`skeleton-blocks`,label:`Skeleton Blocks`,category:`surface`,description:`A compact skeleton-style block layout with animated shimmer passes.`,recommendedUse:`Use for content placeholders, side panels, cards, and list loading states.`,defaultCount:4,minCount:4,maxCount:4}},r=Object.values(n);function i(e){return n[e]}function a(t,n){let r=i(t);return e(n.count??r.defaultCount,r.minCount,r.maxCount)}function o(e,t){let n=e??t;return typeof n==`number`?`${n}px`:n}function s(e){return e.replace(/[A-Z]/g,e=>`-${e.toLowerCase()}`)}function c(e,t){Object.entries(t).forEach(([t,n])=>{let r=t.startsWith(`--`)?t:s(t);if(n==null){e.style.removeProperty(r);return}e.style.setProperty(r,l(n))})}function l(e){return typeof e==`number`?String(e):e??``}function u(e,t){let n=e.replace(`#`,``).trim(),r=n.length===3||n.length===4?n.split(``).map(e=>`${e}${e}`).join(``):n;if(r.length!==6&&r.length!==8)return`color-mix(in srgb, ${e} ${Math.round(t*100)}%, transparent)`;let i=parseInt(r.slice(0,2),16),a=parseInt(r.slice(2,4),16),o=parseInt(r.slice(4,6),16),s=r.length===8?parseInt(r.slice(6,8),16)/255:1;return`rgba(${i}, ${a}, ${o}, ${Math.max(0,Math.min(1,s*t))})`}function d(e,t){let n=e.replace(/rgba?\(/,``).replace(`)`,``).split(`,`).map(e=>e.trim());return n.length<3?`color-mix(in srgb, ${e} ${Math.round(t*100)}%, transparent)`:`rgba(${n[0]}, ${n[1]}, ${n[2]}, ${t})`}function f(e,t){let n=Math.max(0,Math.min(1,t));return e.startsWith(`#`)?u(e,n):e.startsWith(`rgb`)?d(e,n):`color-mix(in srgb, ${e} ${Math.round(n*100)}%, transparent)`}var p={variant:`ring`,size:`40px`,color:`var(--rvl-theme-color)`,secondaryColor:`var(--rvl-theme-secondary)`,speed:900,thickness:3,opacity:1,background:`var(--rvl-theme-overlay)`,overlay:!1,blur:12,radius:`18px`,gap:8,direction:`normal`,label:``,inline:!1,centered:!1,fullscreen:!1,visible:!1,delay:0,minVisible:240,zIndex:1600,className:``,style:{},ariaLive:`polite`,target:null};function m(n={}){let r=n.variant??p.variant,s=i(r),c=n.color??p.color,l=n.secondaryColor??f(c,.2),u=Object.prototype.hasOwnProperty.call(n,`label`),d={variant:r,size:o(n.size,p.size),color:c,secondaryColor:l,speed:e(t(n.speed,p.speed),200,8e3),thickness:e(t(n.thickness,p.thickness),1,16),opacity:e(typeof n.opacity==`number`?n.opacity:p.opacity,.12,1),background:n.background??p.background,overlay:n.overlay??p.overlay,blur:e(t(n.blur,p.blur),0,32),radius:o(n.radius,p.radius),gap:e(t(n.gap,p.gap),0,48),count:a(r,n),direction:n.direction??p.direction,label:u?n.label??``:p.label,inline:n.inline??p.inline,centered:n.centered??p.centered,fullscreen:n.fullscreen??p.fullscreen,visible:n.visible??p.visible,delay:e(t(n.delay,p.delay),0,3e4),minVisible:e(t(n.minVisible,p.minVisible),0,6e4),zIndex:e(t(n.zIndex,p.zIndex),1,2147483647),className:n.className?.trim()??p.className,style:n.style??{},ariaLive:n.ariaLive??p.ariaLive,target:n.target??p.target};return d.fullscreen&&(d.overlay=!0,d.inline=!1,d.centered=!0),d.inline&&(d.overlay=!1,d.fullscreen=!1),!u&&!d.label&&(d.label=`Loading with ${s.label.toLowerCase()}`),d}var h=`
 :root {
   --rvl-theme-color: #2563eb;
   --rvl-theme-secondary: rgba(37, 99, 235, 0.18);
@@ -374,7 +374,7 @@ var _=Object.defineProperty;var Q=(e,r,a)=>r in e?_(e,r,{enumerable:!0,configura
     scroll-behavior: auto !important;
   }
 }
-`,m=`
+`,g=`
 .rvl-variant--ring .rvl-part:nth-child(1) {
   inset: 0;
   border: var(--rvl-thickness) solid var(--rvl-secondary-color);
@@ -1415,19 +1415,12 @@ var _=Object.defineProperty;var Q=(e,r,a)=>r in e?_(e,r,{enumerable:!0,configura
   height: calc(var(--rvl-size) * 0.28);
   width: 62%;
 }
-`,q=".rvl-variant--",I=new Map;function ne(e){const r=`${q}${e}`,a=[];let t=0;for(;t<m.length;){for(;t<m.length&&/\s/.test(m[t]??"");)t+=1;if(t>=m.length)break;const i=t;for(;t<m.length&&m[t]!=="{";)t+=1;if(t>=m.length)break;const l=m.slice(i,t).trim();t+=1;const n=t;let u=1;for(;t<m.length&&u>0;){const v=m[t];v==="{"?u+=1:v==="}"&&(u-=1),t+=1}if(!l.includes(q))continue;const h=l.split(",").map(v=>v.trim()).filter(Boolean).filter(v=>v.includes(r));if(!h.length)continue;const x=m.slice(n,t-1).trimEnd();a.push(`${h.join(`,
-`)} {
-${x}
-}`)}return a.join(`
+`,_=`.rvl-variant--`,v=new Map;function y(e){let t=`${_}${e}`,n=[],r=0;for(;r<g.length;){for(;r<g.length&&/\s/.test(g[r]??``);)r+=1;if(r>=g.length)break;let e=r;for(;r<g.length&&g[r]!==`{`;)r+=1;if(r>=g.length)break;let i=g.slice(e,r).trim();r+=1;let a=r,o=1;for(;r<g.length&&o>0;){let e=g[r];e===`{`?o+=1:e===`}`&&--o,r+=1}if(!i.includes(_))continue;let s=i.split(`,`).map(e=>e.trim()).filter(Boolean).filter(e=>e.includes(t));if(!s.length)continue;let c=g.slice(a,r-1).trimEnd();n.push(`${s.join(`,
+`)} {\n${c}\n}`)}return n.join(`
 
-`)}function oe(e){const r=I.get(e);if(r)return r;const a=ne(e);return I.set(e,a),a}const se=le;function N(){return typeof window<"u"&&typeof document<"u"}const V="data-rvl-loading-base",M="data-rvl-loading-variant";function de(e){if(e.head.querySelector(`[${V}]`))return;const r=e.createElement("style");r.setAttribute(V,"true"),r.textContent=se,e.head.append(r)}function ce(e,r){if(r.head.querySelector(`[${M}="${e}"]`))return;const a=oe(e);if(!a.trim())return;const t=r.createElement("style");t.setAttribute(M,e),t.textContent=a,r.head.append(t)}function R(e,r=document){N()&&(de(r),ce(e,r))}function ve(e,r=document){if(typeof e=="string"){const a=r.querySelector(e);if(!a)throw new Error(`@stackline/loading-core could not find target "${e}".`);return a}return e instanceof HTMLElement?e:r.body}function pe(e){if(e===document.body||e===document.documentElement)return()=>{};const r=window.getComputedStyle(e).position;if(r&&r!=="static")return()=>{};const a=e.style.position;return e.style.position="relative",()=>{if(a){e.style.position=a;return}e.style.removeProperty("position")}}let D=0;function ue(e="rvl"){return D+=1,`${e}-${D}`}class he{constructor(r={}){c(this,"id",ue());c(this,"element");c(this,"state",{mounted:!1,visible:!1,destroyed:!1,pending:null});c(this,"bodyElement");c(this,"visualElement");c(this,"labelElement");c(this,"srElement");c(this,"options");c(this,"mountedTarget",null);c(this,"restorePositionContext",null);c(this,"showTimeoutId",null);c(this,"hideTimeoutId",null);c(this,"showResolver",null);c(this,"hideResolver",null);c(this,"shownAt",0);if(!N())throw new Error("@stackline/loading-core requires a browser-like DOM to create loaders.");this.options=P(r),R(this.options.variant),this.element=document.createElement("div"),this.element.dataset.rvlLoader=this.id,this.bodyElement=document.createElement("div"),this.bodyElement.className="rvl-body",this.visualElement=document.createElement("div"),this.visualElement.className="rvl-visual",this.visualElement.setAttribute("aria-hidden","true"),this.labelElement=document.createElement("span"),this.labelElement.className="rvl-label",this.srElement=document.createElement("span"),this.srElement.className="rvl-sr-only",this.bodyElement.append(this.visualElement,this.labelElement,this.srElement),this.element.append(this.bodyElement),this.render(),(this.options.target||this.options.fullscreen)&&this.mount(this.options.target),this.options.visible?this.show():this.element.hidden=!0}getOptions(){return{...this.options,style:{...this.options.style}}}mount(r){this.assertAlive();const a=this.resolveMountTarget(r);return this.mountedTarget===a&&this.state.mounted?this:(this.unmount(),this.options.overlay&&!this.options.fullscreen&&(this.restorePositionContext=pe(a)),a.append(this.element),this.mountedTarget=a,this.state.mounted=!0,this)}unmount(){return this.element.parentElement&&this.element.parentElement.removeChild(this.element),this.restorePositionContext&&(this.restorePositionContext(),this.restorePositionContext=null),this.mountedTarget=null,this.state.mounted=!1,this}show(){return this.assertAlive(),this.state.visible&&this.state.pending!=="hide"?Promise.resolve():(this.clearHideTimer(!0),this.state.pending="show",this.state.mounted||this.mount(this.options.target),new Promise(r=>{const a=()=>{var t;this.state.pending=null,this.state.visible=!0,this.shownAt=Date.now(),this.element.hidden=!1,this.syncVisibility(),(t=this.showResolver)==null||t.call(this),this.showResolver=null};if(this.clearShowTimer(!0),this.showResolver=r,this.options.delay>0){this.showTimeoutId=window.setTimeout(a,this.options.delay);return}a()}))}hide(){return this.assertAlive(),!this.state.visible&&this.state.pending!=="show"?(this.syncVisibility(),Promise.resolve()):(this.clearShowTimer(!0),this.state.pending="hide",new Promise(r=>{const a=()=>{var l;this.state.pending=null,this.state.visible=!1,this.syncVisibility(),(l=this.hideResolver)==null||l.call(this),this.hideResolver=null};if(this.clearHideTimer(!0),this.hideResolver=r,!this.state.visible){a();return}const t=this.shownAt?Date.now()-this.shownAt:0,i=Math.max(0,this.options.minVisible-t);if(i>0){this.hideTimeoutId=window.setTimeout(a,i);return}a()}))}toggle(r){return(typeof r=="boolean"?r:!this.state.visible)?this.show():this.hide()}update(r){this.assertAlive();const a=this.resolveMountTarget();this.options=P({...this.options,...r,style:{...this.options.style,...r.style??{}}}),R(this.options.variant),this.render();const t=this.resolveMountTarget();return a!==t&&this.state.mounted&&this.mount(t),this}destroy(){this.state.destroyed||(this.clearShowTimer(!0),this.clearHideTimer(!0),this.unmount(),this.state.destroyed=!0)}render(){const r=k(this.options.variant);this.element.className=["rvl-loader",`rvl-variant--${this.options.variant}`,this.options.inline?"is-inline":"is-block",this.options.overlay?"is-overlay":"",this.options.fullscreen?"is-fullscreen":"",this.options.centered?"is-centered":"",this.options.label?"has-label":"",this.options.className].filter(Boolean).join(" "),this.element.setAttribute("role","status"),this.element.setAttribute("aria-live",this.options.ariaLive),this.element.setAttribute("aria-atomic","true"),this.element.setAttribute("aria-busy",this.state.visible?"true":"false"),this.element.dataset.variant=this.options.variant,this.element.style.cssText="",this.element.style.setProperty("--rvl-size",this.options.size),this.element.style.setProperty("--rvl-color",this.options.color),this.element.style.setProperty("--rvl-secondary-color",this.options.secondaryColor),this.element.style.setProperty("--rvl-speed",`${this.options.speed}ms`),this.element.style.setProperty("--rvl-thickness",`${this.options.thickness}px`),this.element.style.setProperty("--rvl-opacity",`${this.options.opacity}`),this.element.style.setProperty("--rvl-background",this.options.background),this.element.style.setProperty("--rvl-blur",`${this.options.blur}px`),this.element.style.setProperty("--rvl-radius",this.options.radius),this.element.style.setProperty("--rvl-gap",`${this.options.gap}px`),this.element.style.setProperty("--rvl-z-index",`${this.options.zIndex}`),this.element.style.setProperty("animation-direction",this.options.direction),ee(this.element,this.options.style),this.labelElement.textContent=this.options.label,this.srElement.textContent=this.options.label,this.options.label?this.element.setAttribute("aria-label",this.options.label):this.element.removeAttribute("aria-label"),this.element.title=r.label,this.visualElement.replaceChildren();for(let a=0;a<this.options.count;a+=1){const t=document.createElement("span");t.className="rvl-part",t.style.setProperty("--part-index",String(a)),this.visualElement.append(t)}this.syncVisibility()}syncVisibility(){this.element.hidden=!this.state.visible,this.element.setAttribute("aria-busy",this.state.visible?"true":"false"),this.element.setAttribute("aria-hidden",this.state.visible?"false":"true")}resolveMountTarget(r){return this.options.fullscreen?document.body:ve(r??this.options.target)}clearShowTimer(r=!1){this.showTimeoutId!=null&&(window.clearTimeout(this.showTimeoutId),this.showTimeoutId=null),r&&this.showResolver&&(this.showResolver(),this.showResolver=null)}clearHideTimer(r=!1){this.hideTimeoutId!=null&&(window.clearTimeout(this.hideTimeoutId),this.hideTimeoutId=null),r&&this.hideResolver&&(this.hideResolver(),this.hideResolver=null)}assertAlive(){if(this.state.destroyed)throw new Error("@stackline/loading-core cannot operate on a destroyed loader.")}}function L(e={}){return new he(e)}const me={color:"#2563eb",secondaryColor:"rgba(37, 99, 235, 0.18)",surface:"rgba(255, 255, 255, 0.92)",overlay:"rgba(255, 255, 255, 0.72)",text:"#0f172a",muted:"#475569"},be={color:"#60a5fa",secondaryColor:"rgba(96, 165, 250, 0.24)",surface:"rgba(15, 23, 42, 0.78)",overlay:"rgba(2, 6, 23, 0.7)",text:"#e2e8f0",muted:"#94a3b8"};function ge(e=document.documentElement,r){return r.color&&e.style.setProperty("--rvl-theme-color",r.color),r.secondaryColor&&e.style.setProperty("--rvl-theme-secondary",r.secondaryColor),r.surface&&e.style.setProperty("--rvl-theme-surface",r.surface),r.overlay&&e.style.setProperty("--rvl-theme-overlay",r.overlay),r.text&&e.style.setProperty("--rvl-theme-text",r.text),r.muted&&e.style.setProperty("--rvl-theme-muted",r.muted),e}const f={variant:"orbit",size:60,speed:900,color:"#2563eb",secondaryColor:"rgba(37, 99, 235, 0.18)",overlay:!1,fullscreen:!1,centered:!0,label:"Loading preview",delay:0,minVisible:240,reducedMotion:!1};function fe(e){const r=[];return r.push(`  variant: '${e.variant}',`),r.push(`  size: ${e.size},`),r.push(`  speed: ${e.speed},`),r.push(`  color: '${e.color}',`),r.push(`  secondaryColor: '${e.secondaryColor}',`),(e.overlay||e.fullscreen)&&r.push(`  overlay: ${e.overlay||e.fullscreen},`),e.fullscreen&&r.push("  fullscreen: true,"),e.centered&&!e.fullscreen&&r.push("  centered: true,"),e.label&&r.push(`  label: '${e.label}',`),e.delay>0&&r.push(`  delay: ${e.delay},`),e.minVisible!==f.minVisible&&r.push(`  minVisible: ${e.minVisible},`),`const loader = createLoader({
-${r.join(`
-`)}
-});
-
-loader.mount(target);
-loader.show();`}function ye(e){return{variant:e.variant,size:e.size,speed:e.speed,color:e.color,secondaryColor:e.secondaryColor,overlay:e.overlay||e.fullscreen,centered:e.centered||e.overlay||e.fullscreen,fullscreen:!1,label:e.label,delay:e.delay,minVisible:e.minVisible}}function we(e,r){const a=r?"is-fullscreen-simulated":"";return e==="table"?`
-      <div class="playground-surface playground-surface--table ${a}" data-surface>
+`)}function b(e){let t=v.get(e);if(t)return t;let n=y(e);return v.set(e,n),n}function x(e){return e?`${h}\n${b(e)}`:`${h}\n${g}`}var S=h;x();function C(){return typeof window<`u`&&typeof document<`u`}var w=`data-rvl-loading-base`,T=`data-rvl-loading-variant`;function ee(e){if(e.head.querySelector(`[${w}]`))return;let t=e.createElement(`style`);t.setAttribute(w,`true`),t.textContent=S,e.head.append(t)}function E(e,t){if(t.head.querySelector(`[${T}="${e}"]`))return;let n=b(e);if(!n.trim())return;let r=t.createElement(`style`);r.setAttribute(T,e),r.textContent=n,t.head.append(r)}function D(e,t=document){C()&&(ee(t),E(e,t))}function O(e,t=document){if(typeof e==`string`){let n=t.querySelector(e);if(!n)throw Error(`@stackline/loading-core could not find target "${e}".`);return n}return e instanceof HTMLElement?e:t.body}function k(e){if(e===document.body||e===document.documentElement)return()=>void 0;let t=window.getComputedStyle(e).position;if(t&&t!==`static`)return()=>void 0;let n=e.style.position;return e.style.position=`relative`,()=>{if(n){e.style.position=n;return}e.style.removeProperty(`position`)}}var A=0;function j(e=`rvl`){return A+=1,`${e}-${A}`}var M=class{id=j();element;state={mounted:!1,visible:!1,destroyed:!1,pending:null};bodyElement;visualElement;labelElement;srElement;options;mountedTarget=null;restorePositionContext=null;showTimeoutId=null;hideTimeoutId=null;showResolver=null;hideResolver=null;shownAt=0;constructor(e={}){if(!C())throw Error(`@stackline/loading-core requires a browser-like DOM to create loaders.`);this.options=m(e),D(this.options.variant),this.element=document.createElement(`div`),this.element.dataset.rvlLoader=this.id,this.bodyElement=document.createElement(`div`),this.bodyElement.className=`rvl-body`,this.visualElement=document.createElement(`div`),this.visualElement.className=`rvl-visual`,this.visualElement.setAttribute(`aria-hidden`,`true`),this.labelElement=document.createElement(`span`),this.labelElement.className=`rvl-label`,this.srElement=document.createElement(`span`),this.srElement.className=`rvl-sr-only`,this.bodyElement.append(this.visualElement,this.labelElement,this.srElement),this.element.append(this.bodyElement),this.render(),(this.options.target||this.options.fullscreen)&&this.mount(this.options.target),this.options.visible?this.show():this.element.hidden=!0}getOptions(){return{...this.options,style:{...this.options.style}}}mount(e){this.assertAlive();let t=this.resolveMountTarget(e);return this.mountedTarget===t&&this.state.mounted?this:(this.unmount(),this.options.overlay&&!this.options.fullscreen&&(this.restorePositionContext=k(t)),t.append(this.element),this.mountedTarget=t,this.state.mounted=!0,this)}unmount(){return this.element.parentElement&&this.element.parentElement.removeChild(this.element),this.restorePositionContext&&=(this.restorePositionContext(),null),this.mountedTarget=null,this.state.mounted=!1,this}show(){return this.assertAlive(),this.state.visible&&this.state.pending!==`hide`?Promise.resolve():(this.clearHideTimer(!0),this.state.pending=`show`,this.state.mounted||this.mount(this.options.target),new Promise(e=>{let t=()=>{this.state.pending=null,this.state.visible=!0,this.shownAt=Date.now(),this.element.hidden=!1,this.syncVisibility(),this.showResolver?.(),this.showResolver=null};if(this.clearShowTimer(!0),this.showResolver=e,this.options.delay>0){this.showTimeoutId=window.setTimeout(t,this.options.delay);return}t()}))}hide(){return this.assertAlive(),!this.state.visible&&this.state.pending!==`show`?(this.syncVisibility(),Promise.resolve()):(this.clearShowTimer(!0),this.state.pending=`hide`,new Promise(e=>{let t=()=>{this.state.pending=null,this.state.visible=!1,this.syncVisibility(),this.hideResolver?.(),this.hideResolver=null};if(this.clearHideTimer(!0),this.hideResolver=e,!this.state.visible){t();return}let n=this.shownAt?Date.now()-this.shownAt:0,r=Math.max(0,this.options.minVisible-n);if(r>0){this.hideTimeoutId=window.setTimeout(t,r);return}t()}))}toggle(e){return(typeof e==`boolean`?e:!this.state.visible)?this.show():this.hide()}update(e){this.assertAlive();let t=this.resolveMountTarget();this.options=m({...this.options,...e,style:{...this.options.style,...e.style??{}}}),D(this.options.variant),this.render();let n=this.resolveMountTarget();return t!==n&&this.state.mounted&&this.mount(n),this}destroy(){this.state.destroyed||(this.clearShowTimer(!0),this.clearHideTimer(!0),this.unmount(),this.state.destroyed=!0)}render(){let e=i(this.options.variant);this.element.className=[`rvl-loader`,`rvl-variant--${this.options.variant}`,this.options.inline?`is-inline`:`is-block`,this.options.overlay?`is-overlay`:``,this.options.fullscreen?`is-fullscreen`:``,this.options.centered?`is-centered`:``,this.options.label?`has-label`:``,this.options.className].filter(Boolean).join(` `),this.element.setAttribute(`role`,`status`),this.element.setAttribute(`aria-live`,this.options.ariaLive),this.element.setAttribute(`aria-atomic`,`true`),this.element.setAttribute(`aria-busy`,this.state.visible?`true`:`false`),this.element.dataset.variant=this.options.variant,this.element.style.cssText=``,this.element.style.setProperty(`--rvl-size`,this.options.size),this.element.style.setProperty(`--rvl-color`,this.options.color),this.element.style.setProperty(`--rvl-secondary-color`,this.options.secondaryColor),this.element.style.setProperty(`--rvl-speed`,`${this.options.speed}ms`),this.element.style.setProperty(`--rvl-thickness`,`${this.options.thickness}px`),this.element.style.setProperty(`--rvl-opacity`,`${this.options.opacity}`),this.element.style.setProperty(`--rvl-background`,this.options.background),this.element.style.setProperty(`--rvl-blur`,`${this.options.blur}px`),this.element.style.setProperty(`--rvl-radius`,this.options.radius),this.element.style.setProperty(`--rvl-gap`,`${this.options.gap}px`),this.element.style.setProperty(`--rvl-z-index`,`${this.options.zIndex}`),this.element.style.setProperty(`animation-direction`,this.options.direction),c(this.element,this.options.style),this.labelElement.textContent=this.options.label,this.srElement.textContent=this.options.label,this.options.label?this.element.setAttribute(`aria-label`,this.options.label):this.element.removeAttribute(`aria-label`),this.element.title=e.label,this.visualElement.replaceChildren();for(let e=0;e<this.options.count;e+=1){let t=document.createElement(`span`);t.className=`rvl-part`,t.style.setProperty(`--part-index`,String(e)),this.visualElement.append(t)}this.syncVisibility()}syncVisibility(){this.element.hidden=!this.state.visible,this.element.setAttribute(`aria-busy`,this.state.visible?`true`:`false`),this.element.setAttribute(`aria-hidden`,this.state.visible?`false`:`true`)}resolveMountTarget(e){return this.options.fullscreen?document.body:O(e??this.options.target)}clearShowTimer(e=!1){this.showTimeoutId!=null&&(window.clearTimeout(this.showTimeoutId),this.showTimeoutId=null),e&&this.showResolver&&(this.showResolver(),this.showResolver=null)}clearHideTimer(e=!1){this.hideTimeoutId!=null&&(window.clearTimeout(this.hideTimeoutId),this.hideTimeoutId=null),e&&this.hideResolver&&(this.hideResolver(),this.hideResolver=null)}assertAlive(){if(this.state.destroyed)throw Error(`@stackline/loading-core cannot operate on a destroyed loader.`)}};function N(e={}){return new M(e)}var te={color:`#2563eb`,secondaryColor:`rgba(37, 99, 235, 0.18)`,surface:`rgba(255, 255, 255, 0.92)`,overlay:`rgba(255, 255, 255, 0.72)`,text:`#0f172a`,muted:`#475569`},ne={color:`#60a5fa`,secondaryColor:`rgba(96, 165, 250, 0.24)`,surface:`rgba(15, 23, 42, 0.78)`,overlay:`rgba(2, 6, 23, 0.7)`,text:`#e2e8f0`,muted:`#94a3b8`};function re(e=document.documentElement,t){return t.color&&e.style.setProperty(`--rvl-theme-color`,t.color),t.secondaryColor&&e.style.setProperty(`--rvl-theme-secondary`,t.secondaryColor),t.surface&&e.style.setProperty(`--rvl-theme-surface`,t.surface),t.overlay&&e.style.setProperty(`--rvl-theme-overlay`,t.overlay),t.text&&e.style.setProperty(`--rvl-theme-text`,t.text),t.muted&&e.style.setProperty(`--rvl-theme-muted`,t.muted),e}var P={variant:`orbit`,size:60,speed:900,color:`#2563eb`,secondaryColor:`rgba(37, 99, 235, 0.18)`,overlay:!1,fullscreen:!1,centered:!0,label:`Loading preview`,delay:0,minVisible:240,reducedMotion:!1};function ie(e){let t=[];return t.push(`  variant: '${e.variant}',`),t.push(`  size: ${e.size},`),t.push(`  speed: ${e.speed},`),t.push(`  color: '${e.color}',`),t.push(`  secondaryColor: '${e.secondaryColor}',`),(e.overlay||e.fullscreen)&&t.push(`  overlay: ${e.overlay||e.fullscreen},`),e.fullscreen&&t.push(`  fullscreen: true,`),e.centered&&!e.fullscreen&&t.push(`  centered: true,`),e.label&&t.push(`  label: '${e.label}',`),e.delay>0&&t.push(`  delay: ${e.delay},`),e.minVisible!==P.minVisible&&t.push(`  minVisible: ${e.minVisible},`),`const loader = createLoader({\n${t.join(`
+`)}\n});\n\nloader.mount(target);\nloader.show();`}function F(e){return{variant:e.variant,size:e.size,speed:e.speed,color:e.color,secondaryColor:e.secondaryColor,overlay:e.overlay||e.fullscreen,centered:e.centered||e.overlay||e.fullscreen,fullscreen:!1,label:e.label,delay:e.delay,minVisible:e.minVisible}}function I(e,t){let n=t?`is-fullscreen-simulated`:``;return e===`table`?`
+      <div class="playground-surface playground-surface--table ${n}" data-surface>
         <div class="playground-table">
           <div class="playground-table-head">
             <span>Status</span>
@@ -1462,28 +1455,28 @@ loader.show();`}function ye(e){return{variant:e.variant,size:e.size,speed:e.spee
         </div>
       </div>
     `:`
-    <div class="playground-surface playground-surface--clean ${a}" data-surface></div>
-  `}function xe(e){let r=null;const a={...f};let t="default";e.innerHTML=`
+    <div class="playground-surface playground-surface--clean ${n}" data-surface></div>
+  `}function L(e){let t=null,n={...P},i=`default`;e.innerHTML=`
     <div class="playground-shell">
       <form class="playground-controls">
         <div class="field">
           <label for="variant">Variant</label>
           <select id="variant" name="variant">
-            ${H.map(d=>`<option value="${d.value}">${d.label}</option>`).join("")}
+            ${r.map(e=>`<option value="${e.value}">${e.label}</option>`).join(``)}
           </select>
         </div>
         <div class="field">
-          <label for="size">Size <span data-size-value>${a.size}px</span></label>
-          <input id="size" name="size" type="range" min="18" max="96" value="${a.size}" />
+          <label for="size">Size <span data-size-value>${n.size}px</span></label>
+          <input id="size" name="size" type="range" min="18" max="96" value="${n.size}" />
         </div>
         <div class="field">
-          <label for="speed">Speed <span data-speed-value>${a.speed}ms</span></label>
-          <input id="speed" name="speed" type="range" min="300" max="2200" step="50" value="${a.speed}" />
+          <label for="speed">Speed <span data-speed-value>${n.speed}ms</span></label>
+          <input id="speed" name="speed" type="range" min="300" max="2200" step="50" value="${n.speed}" />
         </div>
         <div class="field two-up">
           <div>
             <label for="color">Primary</label>
-            <input id="color" name="color" type="color" value="${a.color}" />
+            <input id="color" name="color" type="color" value="${n.color}" />
           </div>
           <div>
             <label for="secondaryColor">Secondary</label>
@@ -1492,16 +1485,16 @@ loader.show();`}function ye(e){return{variant:e.variant,size:e.size,speed:e.spee
         </div>
         <div class="field">
           <label for="label">Label</label>
-          <input id="label" name="label" type="text" value="${a.label}" />
+          <input id="label" name="label" type="text" value="${n.label}" />
         </div>
         <div class="field two-up">
           <div>
             <label for="delay">Delay</label>
-            <input id="delay" name="delay" type="number" min="0" step="50" value="${a.delay}" />
+            <input id="delay" name="delay" type="number" min="0" step="50" value="${n.delay}" />
           </div>
           <div>
             <label for="minVisible">Min visible</label>
-            <input id="minVisible" name="minVisible" type="number" min="0" step="50" value="${a.minVisible}" />
+            <input id="minVisible" name="minVisible" type="number" min="0" step="50" value="${n.minVisible}" />
           </div>
         </div>
         <div class="toggle-row">
@@ -1547,7 +1540,7 @@ loader.show();`}function ye(e){return{variant:e.variant,size:e.size,speed:e.spee
         </div>
       </div>
     </div>
-  `;const i=e.querySelector(".playground-controls"),l=e.querySelector("[data-playground-host]"),n=e.querySelector("[data-playground-code]"),u=e.querySelector("[data-size-value]"),h=e.querySelector("[data-speed-value]"),x=e.querySelector("[data-replay]"),v=e.querySelector("[data-copy-playground]"),z=e.querySelector(".playground-stage"),A=Array.from(e.querySelectorAll("[data-preview-tab]"));if(!i||!l||!n||!u||!h||!x||!v||!z)return()=>{};const C=()=>{r==null||r.destroy(),r=null,l.innerHTML=we(t,a.fullscreen),z.classList.toggle("is-reduced-motion",a.reducedMotion),z.dataset.previewTab=t;const d=l.querySelector("[data-surface]")??l;r=L({...ye(a),target:d}),r.mount(d),r.show(),n.textContent=fe(a),u.textContent=`${a.size}px`,h.textContent=`${a.speed}ms`},W=()=>{const d=new FormData(i);a.variant=d.get("variant")??f.variant,a.size=Number(d.get("size")??f.size),a.speed=Number(d.get("speed")??f.speed),a.color=String(d.get("color")??f.color),a.secondaryColor=a.color==="#2563eb"?f.secondaryColor:`color-mix(in srgb, ${a.color} 20%, transparent)`,a.label=String(d.get("label")??""),a.delay=Number(d.get("delay")??0),a.minVisible=Number(d.get("minVisible")??f.minVisible),a.overlay=d.get("overlay")==="on",a.fullscreen=d.get("fullscreen")==="on",a.centered=d.get("centered")==="on",a.reducedMotion=d.get("reducedMotion")==="on",C()};return i.addEventListener("input",W),x.addEventListener("click",()=>{r&&r.hide().then(()=>r==null?void 0:r.show())}),v.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(n.textContent??""),v.textContent="Copied",window.setTimeout(()=>{v.textContent="Copy code"},1200)}catch{v.textContent="Copy failed"}}),A.forEach(d=>{d.addEventListener("click",()=>{const S=d.dataset.previewTab;!S||S===t||(t=S,A.forEach($=>{const U=$===d;$.classList.toggle("is-active",U),$.setAttribute("aria-selected",U?"true":"false")}),C())})}),C(),()=>{r==null||r.destroy()}}const ke=["galaxy","astronaut-to-mars","baseball-player","football-player"],b={install:"npm install @stackline/loading-core",quickStart:`import { createLoader } from '@stackline/loading-core';
+  `;let a=e.querySelector(`.playground-controls`),o=e.querySelector(`[data-playground-host]`),s=e.querySelector(`[data-playground-code]`),c=e.querySelector(`[data-size-value]`),l=e.querySelector(`[data-speed-value]`),u=e.querySelector(`[data-replay]`),d=e.querySelector(`[data-copy-playground]`),f=e.querySelector(`.playground-stage`),p=Array.from(e.querySelectorAll(`[data-preview-tab]`));if(!a||!o||!s||!c||!l||!u||!d||!f)return()=>void 0;let m=()=>{t?.destroy(),t=null,o.innerHTML=I(i,n.fullscreen),f.classList.toggle(`is-reduced-motion`,n.reducedMotion),f.dataset.previewTab=i;let e=o.querySelector(`[data-surface]`)??o;t=N({...F(n),target:e}),t.mount(e),t.show(),s.textContent=ie(n),c.textContent=`${n.size}px`,l.textContent=`${n.speed}ms`};return a.addEventListener(`input`,()=>{let e=new FormData(a);n.variant=e.get(`variant`)??P.variant,n.size=Number(e.get(`size`)??P.size),n.speed=Number(e.get(`speed`)??P.speed),n.color=String(e.get(`color`)??P.color),n.secondaryColor=n.color===`#2563eb`?P.secondaryColor:`color-mix(in srgb, ${n.color} 20%, transparent)`,n.label=String(e.get(`label`)??``),n.delay=Number(e.get(`delay`)??0),n.minVisible=Number(e.get(`minVisible`)??P.minVisible),n.overlay=e.get(`overlay`)===`on`,n.fullscreen=e.get(`fullscreen`)===`on`,n.centered=e.get(`centered`)===`on`,n.reducedMotion=e.get(`reducedMotion`)===`on`,m()}),u.addEventListener(`click`,()=>{t&&t.hide().then(()=>t?.show())}),d.addEventListener(`click`,async()=>{try{await navigator.clipboard.writeText(s.textContent??``),d.textContent=`Copied`,window.setTimeout(()=>{d.textContent=`Copy code`},1200)}catch{d.textContent=`Copy failed`}}),p.forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.previewTab;!t||t===i||(i=t,p.forEach(t=>{let n=t===e;t.classList.toggle(`is-active`,n),t.setAttribute(`aria-selected`,n?`true`:`false`)}),m())})}),m(),()=>{t?.destroy()}}var R=[`galaxy`,`astronaut-to-mars`,`baseball-player`,`football-player`],z={install:`npm install @stackline/loading-core`,quickStart:`import { createLoader } from '@stackline/loading-core';
 
 const card = document.querySelector('.sales-card');
 
@@ -1643,13 +1636,13 @@ loader.show();`,container:`const loader = createLoader({
 });
 
 loader.mount(tableSection);
-loader.show();`},O=[{id:"dashboard-card",title:"Dashboard card",description:"A polished card overlay keeps the layout stable while a metric tile refreshes.",variant:"orbit",options:{variant:"orbit",size:44,overlay:!0,centered:!0,label:"Refreshing KPI"},previewHtml:`
+loader.show();`},B=[{id:`dashboard-card`,title:`Dashboard card`,description:`A polished card overlay keeps the layout stable while a metric tile refreshes.`,variant:`orbit`,options:{variant:`orbit`,size:44,overlay:!0,centered:!0,label:`Refreshing KPI`},previewHtml:`
       <div class="demo-surface surface-card" data-demo-host>
         <div class="surface-eyebrow">Revenue</div>
         <div class="surface-metric">$142.4k</div>
         <div class="surface-trend">+18.4% vs last month</div>
       </div>
-    `,targetSelector:"[data-demo-host]",code:`const loader = createLoader({
+    `,targetSelector:`[data-demo-host]`,code:`const loader = createLoader({
   variant: 'orbit',
   overlay: true,
   centered: true,
@@ -1657,14 +1650,14 @@ loader.show();`},O=[{id:"dashboard-card",title:"Dashboard card",description:"A p
 });
 
 loader.mount(card);
-loader.show();`},{id:"table-section",title:"Table section",description:"Container overlays work well when a page is partially interactive and only one region is loading.",variant:"shimmer",options:{variant:"shimmer",size:54,overlay:!0,centered:!0,radius:20,label:"Loading rows"},previewHtml:`
+loader.show();`},{id:`table-section`,title:`Table section`,description:`Container overlays work well when a page is partially interactive and only one region is loading.`,variant:`shimmer`,options:{variant:`shimmer`,size:54,overlay:!0,centered:!0,radius:20,label:`Loading rows`},previewHtml:`
       <div class="demo-surface surface-table" data-demo-host>
         <div class="table-row table-head"></div>
         <div class="table-row"></div>
         <div class="table-row"></div>
         <div class="table-row"></div>
       </div>
-    `,targetSelector:"[data-demo-host]",code:`const loader = createLoader({
+    `,targetSelector:`[data-demo-host]`,code:`const loader = createLoader({
   variant: 'shimmer',
   overlay: true,
   centered: true,
@@ -1672,11 +1665,11 @@ loader.show();`},{id:"table-section",title:"Table section",description:"Containe
 });
 
 loader.mount(tableSection);
-loader.show();`},{id:"submit-button",title:"Submit button",description:"Inline loaders keep button width stable and make async feedback feel intentional.",variant:"bouncing-dots",options:{variant:"bouncing-dots",inline:!0,size:18,gap:4,label:""},previewHtml:`
+loader.show();`},{id:`submit-button`,title:`Submit button`,description:`Inline loaders keep button width stable and make async feedback feel intentional.`,variant:`bouncing-dots`,options:{variant:`bouncing-dots`,inline:!0,size:18,gap:4,label:``},previewHtml:`
       <button class="surface-button" type="button" data-demo-host>
         <span>Saving changes</span>
       </button>
-    `,targetSelector:"[data-demo-host]",code:`const loader = createLoader({
+    `,targetSelector:`[data-demo-host]`,code:`const loader = createLoader({
   variant: 'bouncing-dots',
   inline: true,
   size: 18,
@@ -1685,7 +1678,7 @@ loader.show();`},{id:"submit-button",title:"Submit button",description:"Inline l
 });
 
 loader.mount(button);
-loader.show();`},{id:"full-page",title:"Entire page",description:"Fullscreen loaders are best for route-level transitions, auth gates, or cold starts.",variant:"vortex",options:{variant:"vortex",size:68,fullscreen:!0,background:"rgba(15, 23, 42, 0.54)",label:"Loading workspace"},previewOptions:{variant:"vortex",size:68,overlay:!0,centered:!0,background:"rgba(15, 23, 42, 0.54)",label:"Loading workspace"},previewHtml:`
+loader.show();`},{id:`full-page`,title:`Entire page`,description:`Fullscreen loaders are best for route-level transitions, auth gates, or cold starts.`,variant:`vortex`,options:{variant:`vortex`,size:68,fullscreen:!0,background:`rgba(15, 23, 42, 0.54)`,label:`Loading workspace`},previewOptions:{variant:`vortex`,size:68,overlay:!0,centered:!0,background:`rgba(15, 23, 42, 0.54)`,label:`Loading workspace`},previewHtml:`
       <div class="demo-surface surface-page" data-demo-host>
         <div class="page-topbar"></div>
         <div class="page-grid">
@@ -1695,7 +1688,7 @@ loader.show();`},{id:"full-page",title:"Entire page",description:"Fullscreen loa
           <div class="page-tile"></div>
         </div>
       </div>
-    `,targetSelector:"[data-demo-host]",code:`const loader = createLoader({
+    `,targetSelector:`[data-demo-host]`,code:`const loader = createLoader({
   variant: 'vortex',
   size: 68,
   fullscreen: true,
@@ -1703,7 +1696,7 @@ loader.show();`},{id:"full-page",title:"Entire page",description:"Fullscreen loa
   label: 'Loading workspace'
 });
 
-loader.show();`},{id:"modal-body",title:"Modal body",description:"Loading only the body keeps the modal frame and actions stable.",variant:"glass-spinner",options:{variant:"glass-spinner",size:42,overlay:!0,centered:!0,blur:14,label:"Loading customer record"},previewHtml:`
+loader.show();`},{id:`modal-body`,title:`Modal body`,description:`Loading only the body keeps the modal frame and actions stable.`,variant:`glass-spinner`,options:{variant:`glass-spinner`,size:42,overlay:!0,centered:!0,blur:14,label:`Loading customer record`},previewHtml:`
       <div class="demo-surface surface-modal">
         <div class="modal-shell">
           <div class="modal-header"></div>
@@ -1714,7 +1707,7 @@ loader.show();`},{id:"modal-body",title:"Modal body",description:"Loading only t
           </div>
         </div>
       </div>
-    `,targetSelector:"[data-demo-host]",code:`const loader = createLoader({
+    `,targetSelector:`[data-demo-host]`,code:`const loader = createLoader({
   variant: 'glass-spinner',
   overlay: true,
   centered: true,
@@ -1722,7 +1715,7 @@ loader.show();`},{id:"modal-body",title:"Modal body",description:"Loading only t
 });
 
 loader.mount(modalBody);
-loader.show();`},{id:"chart",title:"Chart data",description:"Equalizer and radar styles feel great on analytical surfaces while data streams in.",variant:"equalizer-bars",options:{variant:"equalizer-bars",size:38,count:5,overlay:!0,centered:!0,label:"Loading chart data"},previewHtml:`
+loader.show();`},{id:`chart`,title:`Chart data`,description:`Equalizer and radar styles feel great on analytical surfaces while data streams in.`,variant:`equalizer-bars`,options:{variant:`equalizer-bars`,size:38,count:5,overlay:!0,centered:!0,label:`Loading chart data`},previewHtml:`
       <div class="demo-surface surface-chart" data-demo-host>
         <div class="chart-bar" style="height: 28%"></div>
         <div class="chart-bar" style="height: 46%"></div>
@@ -1731,7 +1724,7 @@ loader.show();`},{id:"chart",title:"Chart data",description:"Equalizer and radar
         <div class="chart-bar" style="height: 72%"></div>
         <div class="chart-bar" style="height: 55%"></div>
       </div>
-    `,targetSelector:"[data-demo-host]",code:`const loader = createLoader({
+    `,targetSelector:`[data-demo-host]`,code:`const loader = createLoader({
   variant: 'equalizer-bars',
   overlay: true,
   centered: true,
@@ -1740,13 +1733,13 @@ loader.show();`},{id:"chart",title:"Chart data",description:"Equalizer and radar
 });
 
 loader.mount(chartPanel);
-loader.show();`},{id:"upload",title:"File upload zone",description:"A centered loader inside the drop zone keeps the task grounded in the user’s current context.",variant:"diamond",options:{variant:"diamond",size:40,overlay:!0,centered:!0,label:"Uploading assets"},previewHtml:`
+loader.show();`},{id:`upload`,title:`File upload zone`,description:`A centered loader inside the drop zone keeps the task grounded in the user’s current context.`,variant:`diamond`,options:{variant:`diamond`,size:40,overlay:!0,centered:!0,label:`Uploading assets`},previewHtml:`
       <div class="demo-surface surface-upload" data-demo-host>
         <div class="upload-icon"></div>
         <div class="upload-title">Drop files here</div>
         <div class="upload-caption">PNG, SVG, PDF up to 25 MB</div>
       </div>
-    `,targetSelector:"[data-demo-host]",code:`const loader = createLoader({
+    `,targetSelector:`[data-demo-host]`,code:`const loader = createLoader({
   variant: 'diamond',
   overlay: true,
   centered: true,
@@ -1754,33 +1747,159 @@ loader.show();`},{id:"upload",title:"File upload zone",description:"A centered l
 });
 
 loader.mount(uploadZone);
-loader.show();`},{id:"artificial-delay",title:"Artificial delay",description:"Delay and minimum visibility are the key to removing loader flash on fast network calls.",variant:"ring",options:{variant:"ring",size:36,overlay:!0,centered:!0,delay:250,minVisible:320,label:"Checking availability"},previewHtml:`
+loader.show();`},{id:`artificial-delay`,title:`Artificial delay`,description:`Delay and minimum visibility are the key to removing loader flash on fast network calls.`,variant:`ring`,options:{variant:`ring`,size:36,overlay:!0,centered:!0,delay:250,minVisible:320,label:`Checking availability`},previewHtml:`
       <div class="demo-surface surface-card" data-demo-host>
         <div class="surface-eyebrow">Availability</div>
         <div class="surface-metric">Checking...</div>
         <div class="surface-trend">Delay avoids flash on fast responses.</div>
       </div>
-    `,targetSelector:"[data-demo-host]",code:`const loader = createLoader({
+    `,targetSelector:`[data-demo-host]`,code:`const loader = createLoader({
   variant: 'ring',
   overlay: true,
   centered: true,
   delay: 250,
   minVisible: 320,
   label: 'Checking availability'
-});`}];function ze(e){return e.split("&").join("&amp;").split("<").join("&lt;").split(">").join("&gt;").split('"').join("&quot;").split("'").join("&#39;")}function p(e,r,a="ts"){return`
+});`}];function V(e){return e.split(`&`).join(`&amp;`).split(`<`).join(`&lt;`).split(`>`).join(`&gt;`).split(`"`).join(`&quot;`).split(`'`).join(`&#39;`)}function H(e,t,n=`ts`){return`
     <div class="code-block">
       <div class="code-block-head">
         <span>${e}</span>
         <button class="copy-button" type="button">Copy</button>
       </div>
-      <pre><code class="language-${a}">${ze(r)}</code></pre>
+      <pre><code class="language-${n}">${V(t)}</code></pre>
     </div>
-  `}function o(e,r){return`
+  `}function U(e,t){return`
     <section class="page-section">
       <h2>${e}</h2>
-      ${r}
+      ${t}
     </section>
-  `}const Ce=`
+  `}var W=[{slug:`home`,title:`@stackline/loading-core`,eyebrow:`Premium Loading Toolkit`,description:`A modern framework-agnostic loading library for overlays, buttons, cards, dashboards, and polished async UX.`,body:`
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="badge">TypeScript first</span>
+          <h1>Loading states that feel designed, not bolted on.</h1>
+          <p>
+            <strong>@stackline/loading-core</strong> is a production-focused toolkit for modern web apps.
+            It gives you polished variants, smart delay and minimum visibility behavior, accessible defaults,
+            theme tokens, and container-aware mounting APIs without tying you to a framework.
+            The 1.0.1 release preserves the stable API while refreshing the tested build chain and type compatibility.
+          </p>
+          <div class="hero-actions">
+            <a class="button-primary" href="#/quick-start">Quick start</a>
+            <a class="button-secondary" href="#/playground">Open playground</a>
+          </div>
+          <div class="hero-points">
+            <span>35 polished variants</span>
+            <span>Overlay + fullscreen modes</span>
+            <span>Delay and anti-flicker controls</span>
+            <span>Accessible by default</span>
+          </div>
+        </div>
+        <div class="hero-showcase" data-gallery="featured"></div>
+      </section>
+      ${U(`Why this library exists`,`
+          <p>Most loading packages stop at a spinner. Real products need more than that.</p>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Real app patterns</h3>
+              <p>Overlays, buttons, sections, dashboards, modals, uploads, and route-level loading all need different behavior.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Premium motion</h3>
+              <p>Variants are tuned to feel clean, modern, and branded instead of looking like legacy utility widgets.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Smart visibility</h3>
+              <p><code>delay</code> and <code>minVisible</code> help you avoid fast-network flashes and jarring flicker.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Framework-agnostic core</h3>
+              <p>The API is future-friendly for wrappers, but this package stays focused on a clean DOM-first foundation.</p>
+            </article>
+          </div>
+        `)}
+      ${U(`Choose the right loader`,`
+          <div class="comparison-grid">
+            <article class="comparison-card">
+              <h3>Spinners</h3>
+              <p>Best when you need a familiar “work in progress” signal for cards, modals, and overlays.</p>
+            </article>
+            <article class="comparison-card">
+              <h3>Dots</h3>
+              <p>Best for inline UI, chat, buttons, and quieter micro-interactions.</p>
+            </article>
+            <article class="comparison-card">
+              <h3>Bars</h3>
+              <p>Best for analytical surfaces, dashboards, and regions that benefit from directional movement.</p>
+            </article>
+            <article class="comparison-card">
+              <h3>Shimmer</h3>
+              <p>Best for skeleton-like content loading and layout-preserving placeholders.</p>
+            </article>
+            <article class="comparison-card">
+              <h3>Overlay modes</h3>
+              <p>Best when the user should stay anchored to a specific container, modal body, or full screen.</p>
+            </article>
+          </div>
+        `)}
+    `},{slug:`installation`,title:`Installation`,eyebrow:`Get Started`,description:`Install the package and understand what ships in the core library.`,body:`
+      ${U(`Install the package`,`
+          <p>The package is dependency-light and ships a framework-agnostic DOM runtime.</p>
+          ${H(`npm`,z.install,`bash`)}
+          <p>You do not need a CSS framework, component library, or wrapper package. The core package injects its own styles only when a loader is created.</p>
+        `)}
+      ${U(`Use pure JavaScript from GitHub`,`
+          <p>If you do not want npm in the host project, download the browser bundle from GitHub and load it with a script tag.</p>
+          <p><a class="button-secondary" href="https://github.com/alexandroit/loading/tree/main/downloads" target="_blank" rel="noreferrer">Open GitHub download bundle</a></p>
+          ${H(`script tag`,`<section id="loader-host" style="min-height: 160px; position: relative;"></section>
+<script src="./loading.browser.js"><\/script>
+<script>
+  const host = document.getElementById("loader-host");
+  const loader = StacklineLoading.createLoader({
+    variant: "orbit",
+    overlay: true,
+    centered: true,
+    size: 48,
+    label: "Loading analytics"
+  });
+
+  loader.mount(host);
+  loader.show();
+<\/script>`,`html`)}
+          <p>The browser bundle exposes <code>window.StacklineLoading</code> and injects the loader styles automatically at runtime.</p>
+        `)}
+      ${U(`What ships in the package`,`
+          <ul class="content-list">
+            <li>A TypeScript-first core API with strong runtime defaults.</li>
+            <li>35 polished built-in variants.</li>
+            <li>Delay and minimum visible duration controls.</li>
+            <li>Overlay, container, fullscreen, and inline modes.</li>
+            <li>Theme tokens for light and dark defaults.</li>
+          </ul>
+        `)}
+    `},{slug:`quick-start`,title:`Quick Start`,eyebrow:`First Loader`,description:`Create, mount, show, hide, and destroy your first loader in a few lines.`,body:`
+      ${U(`Basic flow`,`
+          <p>Most integrations follow the same lifecycle: create the loader, mount it to a target, show it, then hide and destroy it when work finishes.</p>
+          ${H(`core flow`,z.quickStart)}
+        `)}
+      ${U(`Recommended mental model`,`
+          <ol class="content-list ordered">
+            <li>Use <code>overlay</code> when a container should remain visible but temporarily busy.</li>
+            <li>Use <code>inline</code> for buttons, text rows, and compact controls.</li>
+            <li>Use <code>delay</code> and <code>minVisible</code> for network work that can resolve very quickly.</li>
+            <li>Use <code>label: ''</code> for ultra-compact loaders, but prefer a meaningful label when the state matters to the user.</li>
+          </ol>
+        `)}
+    `},{slug:`api-reference`,title:`API Reference`,eyebrow:`Reference`,description:`Understand the public API surface and how each option affects runtime behavior.`,body:`
+      ${U(`Primary API`,`
+          <div class="api-card-grid">
+            <article class="api-card"><h3><code>createLoader(options)</code></h3><p>Create a loader instance and control it manually.</p></article>
+            <article class="api-card"><h3><code>mountLoader(target, options)</code></h3><p>Create, mount, and show a loader in one call.</p></article>
+            <article class="api-card"><h3><code>showLoader(target, options)</code></h3><p>Sugar for immediate visible mounting.</p></article>
+            <article class="api-card"><h3><code>hydrateLoaders(root)</code></h3><p>Activate declarative loaders from <code>data-*</code> attributes.</p></article>
+          </div>
+        `)}
+      ${U(`Options`,`
   <div class="api-table-wrap">
     <table class="api-table">
       <thead>
@@ -1812,213 +1931,87 @@ loader.show();`},{id:"artificial-delay",title:"Artificial delay",description:"De
       </tbody>
     </table>
   </div>
-`,T=[{slug:"home",title:"@stackline/loading-core",eyebrow:"Premium Loading Toolkit",description:"A modern framework-agnostic loading library for overlays, buttons, cards, dashboards, and polished async UX.",body:`
-      <section class="hero">
-        <div class="hero-copy">
-          <span class="badge">TypeScript first</span>
-          <h1>Loading states that feel designed, not bolted on.</h1>
-          <p>
-            <strong>@stackline/loading-core</strong> is a production-focused toolkit for modern web apps.
-            It gives you polished variants, smart delay and minimum visibility behavior, accessible defaults,
-            theme tokens, and container-aware mounting APIs without tying you to a framework.
-            The 1.0.0 release is the stable baseline for teams that need dependable loading states across product surfaces.
-          </p>
-          <div class="hero-actions">
-            <a class="button-primary" href="#/quick-start">Quick start</a>
-            <a class="button-secondary" href="#/playground">Open playground</a>
-          </div>
-          <div class="hero-points">
-            <span>35 polished variants</span>
-            <span>Overlay + fullscreen modes</span>
-            <span>Delay and anti-flicker controls</span>
-            <span>Accessible by default</span>
-          </div>
-        </div>
-        <div class="hero-showcase" data-gallery="featured"></div>
-      </section>
-      ${o("Why this library exists",`
-          <p>Most loading packages stop at a spinner. Real products need more than that.</p>
-          <div class="feature-grid">
-            <article class="feature-card">
-              <h3>Real app patterns</h3>
-              <p>Overlays, buttons, sections, dashboards, modals, uploads, and route-level loading all need different behavior.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Premium motion</h3>
-              <p>Variants are tuned to feel clean, modern, and branded instead of looking like legacy utility widgets.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Smart visibility</h3>
-              <p><code>delay</code> and <code>minVisible</code> help you avoid fast-network flashes and jarring flicker.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Framework-agnostic core</h3>
-              <p>The API is future-friendly for wrappers, but this package stays focused on a clean DOM-first foundation.</p>
-            </article>
-          </div>
-        `)}
-      ${o("Choose the right loader",`
-          <div class="comparison-grid">
-            <article class="comparison-card">
-              <h3>Spinners</h3>
-              <p>Best when you need a familiar “work in progress” signal for cards, modals, and overlays.</p>
-            </article>
-            <article class="comparison-card">
-              <h3>Dots</h3>
-              <p>Best for inline UI, chat, buttons, and quieter micro-interactions.</p>
-            </article>
-            <article class="comparison-card">
-              <h3>Bars</h3>
-              <p>Best for analytical surfaces, dashboards, and regions that benefit from directional movement.</p>
-            </article>
-            <article class="comparison-card">
-              <h3>Shimmer</h3>
-              <p>Best for skeleton-like content loading and layout-preserving placeholders.</p>
-            </article>
-            <article class="comparison-card">
-              <h3>Overlay modes</h3>
-              <p>Best when the user should stay anchored to a specific container, modal body, or full screen.</p>
-            </article>
-          </div>
-        `)}
-    `},{slug:"installation",title:"Installation",eyebrow:"Get Started",description:"Install the package and understand what ships in the core library.",body:`
-      ${o("Install the package",`
-          <p>The package is dependency-light and ships a framework-agnostic DOM runtime.</p>
-          ${p("npm",b.install,"bash")}
-          <p>You do not need a CSS framework, component library, or wrapper package. The core package injects its own styles only when a loader is created.</p>
-        `)}
-      ${o("Use pure JavaScript from GitHub",`
-          <p>If you do not want npm in the host project, download the browser bundle from GitHub and load it with a script tag.</p>
-          <p><a class="button-secondary" href="https://github.com/alexandroit/loading/tree/main/downloads" target="_blank" rel="noreferrer">Open GitHub download bundle</a></p>
-          ${p("script tag",`<section id="loader-host" style="min-height: 160px; position: relative;"></section>
-<script src="./loading.browser.js"><\/script>
-<script>
-  const host = document.getElementById("loader-host");
-  const loader = StacklineLoading.createLoader({
-    variant: "orbit",
-    overlay: true,
-    centered: true,
-    size: 48,
-    label: "Loading analytics"
-  });
-
-  loader.mount(host);
-  loader.show();
-<\/script>`,"html")}
-          <p>The browser bundle exposes <code>window.StacklineLoading</code> and injects the loader styles automatically at runtime.</p>
-        `)}
-      ${o("What ships in the package",`
-          <ul class="content-list">
-            <li>A TypeScript-first core API with strong runtime defaults.</li>
-            <li>35 polished built-in variants.</li>
-            <li>Delay and minimum visible duration controls.</li>
-            <li>Overlay, container, fullscreen, and inline modes.</li>
-            <li>Theme tokens for light and dark defaults.</li>
-          </ul>
-        `)}
-    `},{slug:"quick-start",title:"Quick Start",eyebrow:"First Loader",description:"Create, mount, show, hide, and destroy your first loader in a few lines.",body:`
-      ${o("Basic flow",`
-          <p>Most integrations follow the same lifecycle: create the loader, mount it to a target, show it, then hide and destroy it when work finishes.</p>
-          ${p("core flow",b.quickStart)}
-        `)}
-      ${o("Recommended mental model",`
-          <ol class="content-list ordered">
-            <li>Use <code>overlay</code> when a container should remain visible but temporarily busy.</li>
-            <li>Use <code>inline</code> for buttons, text rows, and compact controls.</li>
-            <li>Use <code>delay</code> and <code>minVisible</code> for network work that can resolve very quickly.</li>
-            <li>Use <code>label: ''</code> for ultra-compact loaders, but prefer a meaningful label when the state matters to the user.</li>
-          </ol>
-        `)}
-    `},{slug:"api-reference",title:"API Reference",eyebrow:"Reference",description:"Understand the public API surface and how each option affects runtime behavior.",body:`
-      ${o("Primary API",`
-          <div class="api-card-grid">
-            <article class="api-card"><h3><code>createLoader(options)</code></h3><p>Create a loader instance and control it manually.</p></article>
-            <article class="api-card"><h3><code>mountLoader(target, options)</code></h3><p>Create, mount, and show a loader in one call.</p></article>
-            <article class="api-card"><h3><code>showLoader(target, options)</code></h3><p>Sugar for immediate visible mounting.</p></article>
-            <article class="api-card"><h3><code>hydrateLoaders(root)</code></h3><p>Activate declarative loaders from <code>data-*</code> attributes.</p></article>
-          </div>
-        `)}
-      ${o("Options",Ce)}
-      ${o("Theme helpers",`
+`)}
+      ${U(`Theme helpers`,`
           <p>The package exports <code>lightTheme</code>, <code>darkTheme</code>, and <code>applyThemeTokens(...)</code> so you can keep library defaults aligned with your product theme.</p>
-          ${p("theme tokens",b.theme)}
+          ${H(`theme tokens`,z.theme)}
         `)}
-    `},{slug:"variants-gallery",title:"Variants Gallery",eyebrow:"Visual Language",description:"Explore every built-in loader style and understand where each one fits best.",body:`
-      ${o("All built-in variants",`
+    `},{slug:`variants-gallery`,title:`Variants Gallery`,eyebrow:`Visual Language`,description:`Explore every built-in loader style and understand where each one fits best.`,body:`
+      ${U(`All built-in variants`,`
           <p>Each variant is designed to feel modern, branded, and usable in real product surfaces. The gallery below renders the actual package runtime.</p>
           <div class="variant-gallery" data-gallery="all"></div>
         `)}
-    `},{slug:"theming",title:"Theming",eyebrow:"Customization",description:"Use CSS variables and exported tokens to align loaders with your product theme.",body:`
-      ${o("Theme with tokens",`
+    `},{slug:`theming`,title:`Theming`,eyebrow:`Customization`,description:`Use CSS variables and exported tokens to align loaders with your product theme.`,body:`
+      ${U(`Theme with tokens`,`
           <p>Use the exported token helpers to keep the library aligned with your app shell. This is the easiest path when you already switch themes at the document root.</p>
-          ${p("applyThemeTokens",b.theme)}
+          ${H(`applyThemeTokens`,z.theme)}
         `)}
-      ${o("Theme with CSS variables",`
+      ${U(`Theme with CSS variables`,`
           <p>You can also theme the library entirely from CSS:</p>
-          ${p(":root variables",`:root {
+          ${H(`:root variables`,`:root {
   --rvl-theme-color: #0f766e;
   --rvl-theme-secondary: rgba(15, 118, 110, 0.18);
   --rvl-theme-surface: rgba(255, 255, 255, 0.92);
   --rvl-theme-overlay: rgba(240, 253, 250, 0.76);
   --rvl-theme-text: #042f2e;
   --rvl-theme-muted: #134e4a;
-}`,"css")}
+}`,`css`)}
           <p>For branded components, override instance-level options with <code>color</code>, <code>secondaryColor</code>, and <code>background</code>.</p>
         `)}
-    `},{slug:"accessibility",title:"Accessibility",eyebrow:"A11y",description:"Use labels, live regions, and reduced motion support to make loading states understandable.",body:`
-      ${o("Accessible defaults",`
+    `},{slug:`accessibility`,title:`Accessibility`,eyebrow:`A11y`,description:`Use labels, live regions, and reduced motion support to make loading states understandable.`,body:`
+      ${U(`Accessible defaults`,`
           <ul class="content-list">
             <li>Loaders use <code>role="status"</code> and <code>aria-live</code> by default.</li>
             <li>The <code>label</code> option becomes both visible helper text and assistive status content.</li>
             <li><code>prefers-reduced-motion</code> is respected automatically.</li>
           </ul>
-          ${p("accessible inline loader",b.accessibility)}
+          ${H(`accessible inline loader`,z.accessibility)}
         `)}
-      ${o("Practical guidance",`
+      ${U(`Practical guidance`,`
           <p>Keep labels short and stateful: “Loading chart data”, “Saving profile”, or “Uploading assets”. For very brief operations, pair a delay with a polite live region so users are not interrupted unnecessarily.</p>
         `)}
-    `},{slug:"overlay-usage",title:"Overlay Usage",eyebrow:"Patterns",description:"Use overlays for cards, panels, and modal bodies without losing visual context.",body:`
-      ${o("Container overlays",`
+    `},{slug:`overlay-usage`,title:`Overlay Usage`,eyebrow:`Patterns`,description:`Use overlays for cards, panels, and modal bodies without losing visual context.`,body:`
+      ${U(`Container overlays`,`
           <p>Overlay mode keeps the user anchored to the exact surface that is busy. It is ideal for dashboards, tables, detail panes, and modal bodies.</p>
-          ${p("overlay example",b.overlay)}
+          ${H(`overlay example`,z.overlay)}
         `)}
-      ${o("When overlays work best",`
+      ${U(`When overlays work best`,`
           <ul class="content-list">
             <li>Refreshing a dashboard card without blanking the entire page.</li>
             <li>Loading a tab panel while the rest of the screen stays interactive.</li>
             <li>Blocking just the modal body while header and footer actions remain stable.</li>
           </ul>
         `)}
-    `},{slug:"button-loaders",title:"Button Loaders",eyebrow:"Patterns",description:"Keep buttons readable and steady while actions are in flight.",body:`
-      ${o("Inline button states",`
+    `},{slug:`button-loaders`,title:`Button Loaders`,eyebrow:`Patterns`,description:`Keep buttons readable and steady while actions are in flight.`,body:`
+      ${U(`Inline button states`,`
           <p>Button loaders should be compact, quiet, and width-safe. Dots and minimal spinners are especially strong choices here.</p>
-          ${p("button pattern",b.button)}
+          ${H(`button pattern`,z.button)}
         `)}
-      ${o("Good button loading UX",`
+      ${U(`Good button loading UX`,`
           <ul class="content-list">
             <li>Disable the button while work is pending.</li>
             <li>Keep the label readable so users know what action is being processed.</li>
             <li>Use small sizes and tight gap values.</li>
           </ul>
         `)}
-    `},{slug:"fullscreen-loaders",title:"Fullscreen Loaders",eyebrow:"Patterns",description:"Use fullscreen loading for app shell transitions, auth gates, and route-level blocking states.",body:`
-      ${o("Viewport-level loading",`
+    `},{slug:`fullscreen-loaders`,title:`Fullscreen Loaders`,eyebrow:`Patterns`,description:`Use fullscreen loading for app shell transitions, auth gates, and route-level blocking states.`,body:`
+      ${U(`Viewport-level loading`,`
           <p>Fullscreen mode is intentionally heavy-handed. Reserve it for moments when the entire experience is blocked or being reconfigured.</p>
-          ${p("fullscreen example",b.fullscreen)}
+          ${H(`fullscreen example`,z.fullscreen)}
         `)}
-      ${o("Recommended use cases",`
+      ${U(`Recommended use cases`,`
           <ul class="content-list">
             <li>Cold app start with critical bootstrapping.</li>
             <li>Authentication or workspace switching.</li>
             <li>Large route transitions where the previous page should not remain interactive.</li>
           </ul>
         `)}
-    `},{slug:"container-section-loaders",title:"Container & Section Loaders",eyebrow:"Patterns",description:"Load only the region that is actually busy so the rest of the interface stays calm and useful.",body:`
-      ${o("Partial-page loading",`
+    `},{slug:`container-section-loaders`,title:`Container & Section Loaders`,eyebrow:`Patterns`,description:`Load only the region that is actually busy so the rest of the interface stays calm and useful.`,body:`
+      ${U(`Partial-page loading`,`
           <p>This is one of the library’s strongest use cases. By loading only the affected region, you avoid over-blocking the rest of the application.</p>
-          ${p("section loading",b.container)}
+          ${H(`section loading`,z.container)}
         `)}
-      ${o("Great targets",`
+      ${U(`Great targets`,`
           <ul class="content-list">
             <li>Dashboard widgets and chart tiles.</li>
             <li>Tables and side panels.</li>
@@ -2026,29 +2019,29 @@ loader.show();`},{id:"artificial-delay",title:"Artificial delay",description:"De
             <li>Embeds and file upload surfaces.</li>
           </ul>
         `)}
-    `},{slug:"delay-min-visible",title:"Delay & Minimum Visible Duration",eyebrow:"Behavior",description:"Avoid loader flash on fast operations while keeping slow operations feeling smooth and deliberate.",body:`
-      ${o("Anti-flicker behavior",`
+    `},{slug:`delay-min-visible`,title:`Delay & Minimum Visible Duration`,eyebrow:`Behavior`,description:`Avoid loader flash on fast operations while keeping slow operations feeling smooth and deliberate.`,body:`
+      ${U(`Anti-flicker behavior`,`
           <p>Fast requests should often skip a loader entirely. Slow requests should show a loader that stays visible long enough to feel intentional.</p>
-          ${p("delay + minVisible",b.delay)}
+          ${H(`delay + minVisible`,z.delay)}
         `)}
-      ${o("Recommended defaults",`
+      ${U(`Recommended defaults`,`
           <div class="tip-grid">
             <article class="tip-card"><h3>Fast API work</h3><p>Try <code>delay: 120-200</code> to suppress flash.</p></article>
             <article class="tip-card"><h3>Noticeable tasks</h3><p>Use <code>minVisible: 240-400</code> so the animation lands cleanly.</p></article>
             <article class="tip-card"><h3>Heavy transitions</h3><p>Use larger labels and overlays to match the weight of the task.</p></article>
           </div>
         `)}
-    `},{slug:"examples",title:"Examples",eyebrow:"Real World",description:"Production-style examples for cards, tables, buttons, charts, modals, uploads, and more.",body:`
-      ${o("Example gallery",`
+    `},{slug:`examples`,title:`Examples`,eyebrow:`Real World`,description:`Production-style examples for cards, tables, buttons, charts, modals, uploads, and more.`,body:`
+      ${U(`Example gallery`,`
           <p>These examples are grounded in product surfaces you actually see in dashboards, SaaS apps, and admin tools.</p>
           <div class="examples-grid" data-example-grid></div>
         `)}
-    `},{slug:"playground",title:"Playground",eyebrow:"Interactive",description:"Tune variants, size, motion, color, overlays, and behavior in one interactive sandbox.",body:`
-      ${o("Interactive configuration",`
+    `},{slug:`playground`,title:`Playground`,eyebrow:`Interactive`,description:`Tune variants, size, motion, color, overlays, and behavior in one interactive sandbox.`,body:`
+      ${U(`Interactive configuration`,`
           <p>The playground uses the package runtime directly. Fullscreen mode is simulated inside the preview stage so it stays safe inside the docs shell.</p>
           <div data-playground></div>
         `)}
-    `},{slug:"faq",title:"FAQ",eyebrow:"Reference",description:"Common questions about architecture, wrappers, styling, and integration strategy.",body:`
+    `},{slug:`faq`,title:`FAQ`,eyebrow:`Reference`,description:`Common questions about architecture, wrappers, styling, and integration strategy.`,body:`
       <section class="faq-list">
         <details class="faq-item" open>
           <summary>Is this package framework-agnostic?</summary>
@@ -2067,7 +2060,7 @@ loader.show();`},{id:"artificial-delay",title:"Artificial delay",description:"De
           <p>Set a small <code>delay</code> so extremely fast requests never render the loader, and a short <code>minVisible</code> duration so slower requests feel smooth once shown.</p>
         </details>
       </section>
-    `}],Se=[{title:"Start Here",items:[{slug:"home",title:"Home"},{slug:"installation",title:"Installation"},{slug:"quick-start",title:"Quick Start"},{slug:"api-reference",title:"API Reference"}]},{title:"Customization",items:[{slug:"variants-gallery",title:"Variants Gallery"},{slug:"theming",title:"Theming"},{slug:"accessibility",title:"Accessibility"},{slug:"delay-min-visible",title:"Delay & Minimum Visible"}]},{title:"Patterns",items:[{slug:"overlay-usage",title:"Overlay Usage"},{slug:"button-loaders",title:"Button Loaders"},{slug:"fullscreen-loaders",title:"Fullscreen Loaders"},{slug:"container-section-loaders",title:"Container & Section Loaders"},{slug:"examples",title:"Examples"}]},{title:"Interactive",items:[{slug:"faq",title:"FAQ"}]}],j=document.querySelector("#app"),w=new Set,Y="stackline-loading-core-docs-theme";function $e(){return window.location.hash.replace(/^#\/?/,"").trim()||"playground"}function Te(e){return T.find(r=>r.slug===e)??T.find(r=>r.slug==="playground")??T[0]}function Le(e){return`
+    `}],G=[{title:`Start Here`,items:[{slug:`home`,title:`Home`},{slug:`installation`,title:`Installation`},{slug:`quick-start`,title:`Quick Start`},{slug:`api-reference`,title:`API Reference`}]},{title:`Customization`,items:[{slug:`variants-gallery`,title:`Variants Gallery`},{slug:`theming`,title:`Theming`},{slug:`accessibility`,title:`Accessibility`},{slug:`delay-min-visible`,title:`Delay & Minimum Visible`}]},{title:`Patterns`,items:[{slug:`overlay-usage`,title:`Overlay Usage`},{slug:`button-loaders`,title:`Button Loaders`},{slug:`fullscreen-loaders`,title:`Fullscreen Loaders`},{slug:`container-section-loaders`,title:`Container & Section Loaders`},{slug:`examples`,title:`Examples`}]},{title:`Interactive`,items:[{slug:`faq`,title:`FAQ`}]}],K=document.querySelector(`#app`),q=new Set,J=`stackline-loading-core-docs-theme`;function ae(){return window.location.hash.replace(/^#\/?/,``).trim()||`playground`}function oe(e){return W.find(t=>t.slug===e)??W.find(e=>e.slug===`playground`)??W[0]}function se(e){return`
     <aside class="site-sidebar">
       <div class="sidebar-meta">
         <a class="brand-mark" href="#/playground">
@@ -2077,28 +2070,28 @@ loader.show();`},{id:"artificial-delay",title:"Artificial delay",description:"De
         <button class="sidebar-theme" type="button" data-theme-toggle>Theme</button>
       </div>
       <nav>
-        ${Se.map(r=>`
+        ${G.map(t=>`
               <section class="nav-group">
-                <div class="nav-group-title">${r.title}</div>
-                ${r.items.map(a=>`
-                      <a class="nav-link ${a.slug===e?"is-active":""}" href="#/${a.slug}">
-                        ${a.title}
+                <div class="nav-group-title">${t.title}</div>
+                ${t.items.map(t=>`
+                      <a class="nav-link ${t.slug===e?`is-active`:``}" href="#/${t.slug}">
+                        ${t.title}
                       </a>
-                    `).join("")}
+                    `).join(``)}
               </section>
-            `).join("")}
+            `).join(``)}
       </nav>
     </aside>
-  `}function Ae(){return`
+  `}function ce(){return`
     <header class="site-header">
       <button class="mobile-nav-toggle" type="button" data-nav-toggle>Menu</button>
       <button class="sidebar-theme" type="button" data-theme-toggle>Theme</button>
     </header>
-  `}function F(){if(!j)return;w.forEach(r=>r()),w.clear();const e=Te($e());j.innerHTML=`
+  `}function Y(){if(!K)return;q.forEach(e=>e()),q.clear();let e=oe(ae());K.innerHTML=`
     <div class="site-shell">
-      ${Le(e.slug)}
+      ${se(e.slug)}
       <main class="site-main">
-        ${Ae()}
+        ${ce()}
         <div class="page-shell">
           <header class="page-header">
             <span class="page-eyebrow">${e.eyebrow}</span>
@@ -2109,31 +2102,31 @@ loader.show();`},{id:"artificial-delay",title:"Artificial delay",description:"De
         </div>
       </main>
     </div>
-  `,window.scrollTo({top:0,behavior:"instant"}),G(),Pe(),X()}function G(){var e;document.querySelectorAll("[data-theme-toggle]").forEach(r=>{r.addEventListener("click",Ie)}),(e=document.querySelector("[data-nav-toggle]"))==null||e.addEventListener("click",()=>{document.body.classList.toggle("is-nav-open")}),document.querySelectorAll(".copy-button").forEach(r=>{r.addEventListener("click",async()=>{var t,i;const a=((i=(t=r.closest(".code-block"))==null?void 0:t.querySelector("code"))==null?void 0:i.textContent)??"";try{await navigator.clipboard.writeText(a),r.textContent="Copied",window.setTimeout(()=>{r.textContent="Copy"},1200)}catch{r.textContent="Copy failed"}})}),document.querySelectorAll(".nav-link").forEach(r=>{r.addEventListener("click",()=>{document.body.classList.remove("is-nav-open")})})}function Ue(e,r){e.innerHTML=r.map(a=>{const t=k(a);return`
+  `,window.scrollTo({top:0,behavior:`instant`}),X(),ue(),Q()}function X(){document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,fe)}),document.querySelector(`[data-nav-toggle]`)?.addEventListener(`click`,()=>{document.body.classList.toggle(`is-nav-open`)}),document.querySelectorAll(`.copy-button`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.code-block`)?.querySelector(`code`)?.textContent??``;try{await navigator.clipboard.writeText(t),e.textContent=`Copied`,window.setTimeout(()=>{e.textContent=`Copy`},1200)}catch{e.textContent=`Copy failed`}})}),document.querySelectorAll(`.nav-link`).forEach(e=>{e.addEventListener(`click`,()=>{document.body.classList.remove(`is-nav-open`)})})}function Z(e,t){e.innerHTML=t.map(e=>{let t=i(e);return`
         <article class="gallery-card">
           <div class="gallery-preview">
-            <div class="preview-host" data-variant-host="${a}"></div>
+            <div class="preview-host" data-variant-host="${e}"></div>
           </div>
           <h3>${t.label}</h3>
           <p>${t.description}</p>
           <p class="meta"><strong>Best for:</strong> ${t.recommendedUse}</p>
         </article>
-      `}).join(""),e.querySelectorAll("[data-variant-host]").forEach(a=>{const t=a.dataset.variantHost,i={variant:t,size:t==="shimmer"?56:44,centered:!0,label:"",target:a,visible:!0},l=t.includes("dots")?4:t.includes("bars")?5:null,n=L(l==null?i:{...i,count:l});n.mount(a),n.show(),w.add(()=>n.destroy())})}function Ee(e){e.innerHTML=O.map(r=>`
+      `}).join(``),e.querySelectorAll(`[data-variant-host]`).forEach(e=>{let t=e.dataset.variantHost,n={variant:t,size:t===`shimmer`?56:44,centered:!0,label:``,target:e,visible:!0},r=t.includes(`dots`)?4:t.includes(`bars`)?5:null,i=N(r==null?n:{...n,count:r});i.mount(e),i.show(),q.add(()=>i.destroy())})}function le(e){e.innerHTML=B.map(e=>`
         <article class="example-card">
           <div class="example-preview">
-            <div class="preview-host" data-example-id="${r.id}">
-              ${r.previewHtml}
+            <div class="preview-host" data-example-id="${e.id}">
+              ${e.previewHtml}
             </div>
           </div>
-          <h3>${r.title}</h3>
-          <p>${r.description}</p>
+          <h3>${e.title}</h3>
+          <p>${e.description}</p>
           <div class="code-block">
             <div class="code-block-head">
               <span>Example snippet</span>
               <button class="copy-button" type="button">Copy</button>
             </div>
-            <pre><code>${r.code.split("&").join("&amp;").split("<").join("&lt;").split(">").join("&gt;")}</code></pre>
+            <pre><code>${e.code.split(`&`).join(`&amp;`).split(`<`).join(`&lt;`).split(`>`).join(`&gt;`)}</code></pre>
           </div>
         </article>
-      `).join(""),e.querySelectorAll("[data-example-id]").forEach(r=>{const a=r.dataset.exampleId,t=O.find(n=>n.id===a);if(!t)return;const i=r.querySelector(t.targetSelector)??r,l=L({...t.previewOptions??t.options,target:i});l.mount(i),l.show(),w.add(()=>l.destroy())}),G()}function Pe(){document.querySelectorAll("[data-gallery]").forEach(e=>{const a=e.dataset.gallery==="featured"?ke:H.map(t=>t.value);Ue(e,a)}),document.querySelectorAll("[data-example-grid]").forEach(e=>{Ee(e)}),document.querySelectorAll("[data-playground]").forEach(e=>{const r=xe(e);w.add(r)})}function qe(e){return e==="light"?"Dark mode":"Light mode"}function X(){const e=document.documentElement.dataset.docsTheme==="dark"?"dark":"light",r=qe(e);document.querySelectorAll("[data-theme-toggle]").forEach(a=>{a.textContent=r,a.setAttribute("aria-label",`Switch to ${r.toLowerCase()}`),a.setAttribute("title",`Switch to ${r.toLowerCase()}`),a.setAttribute("aria-pressed",e==="dark"?"true":"false")})}function K(e){var r;document.documentElement.dataset.docsTheme=e,ge(document.documentElement,e==="light"?me:be),window.localStorage.setItem(Y,e),(r=document.querySelector('meta[name="theme-color"]'))==null||r.setAttribute("content",e==="light"?"#f7fafc":"#08111f"),X()}function Ie(){const e=document.documentElement.dataset.docsTheme==="light"?"dark":"light";K(e)}function Ve(){const e=window.localStorage.getItem(Y);K(e==="dark"?"dark":"light")}Ve();window.addEventListener("hashchange",F);F();
-//# sourceMappingURL=index-BWyyQ9fa.js.map
+      `).join(``),e.querySelectorAll(`[data-example-id]`).forEach(e=>{let t=e.dataset.exampleId,n=B.find(e=>e.id===t);if(!n)return;let r=e.querySelector(n.targetSelector)??e,i=N({...n.previewOptions??n.options,target:r});i.mount(r),i.show(),q.add(()=>i.destroy())}),X()}function ue(){document.querySelectorAll(`[data-gallery]`).forEach(e=>{Z(e,e.dataset.gallery===`featured`?R:r.map(e=>e.value))}),document.querySelectorAll(`[data-example-grid]`).forEach(e=>{le(e)}),document.querySelectorAll(`[data-playground]`).forEach(e=>{let t=L(e);q.add(t)})}function de(e){return e===`light`?`Dark mode`:`Light mode`}function Q(){let e=document.documentElement.dataset.docsTheme===`dark`?`dark`:`light`,t=de(e);document.querySelectorAll(`[data-theme-toggle]`).forEach(n=>{n.textContent=t,n.setAttribute(`aria-label`,`Switch to ${t.toLowerCase()}`),n.setAttribute(`title`,`Switch to ${t.toLowerCase()}`),n.setAttribute(`aria-pressed`,e===`dark`?`true`:`false`)})}function $(e){document.documentElement.dataset.docsTheme=e,re(document.documentElement,e===`light`?te:ne),window.localStorage.setItem(J,e),document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,e===`light`?`#f7fafc`:`#08111f`),Q()}function fe(){$(document.documentElement.dataset.docsTheme===`light`?`dark`:`light`)}function pe(){$(window.localStorage.getItem(J)===`dark`?`dark`:`light`)}pe(),window.addEventListener(`hashchange`,Y),Y();
+//# sourceMappingURL=index-BXSiEKL6.js.map
