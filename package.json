@@ -103,7 +103,7 @@
     "esbuild": "^0.28.2",
     "jsdom": "^29.1.1",
     "tsup": "^8.5.0",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.2",
     "typescript-3-9": "npm:typescript@3.9.10",
     "vite": "^8.2.1",
     "vitest": "^4.1.11"
