@@ -2,6 +2,11 @@
 
 All notable changes to `@stackline/loading-core` are documented here.
 
+## [Unreleased]
+
+- Added a package-specific security policy, confidential reporting path, and
+  shipped security guidance.
+
 ## [1.0.1] - 2026-08-19
 
 - Updated Vite to 8.2.1, Vitest to 4.1.11, jsdom to 29.1.1, and esbuild to 0.28.2.
