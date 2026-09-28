@@ -3,10 +3,10 @@
 > A framework-agnostic TypeScript loading toolkit with spinners, overlays, skeletons, shimmer loaders, anti-flicker timing, accessible labels, aria-live, reduced-motion support, and CSS variable theming.
 
 Package: @stackline/loading-core
-Current/public release: 1.0.1
+Current/public release: 1.0.2
 Docs scope: Vanilla loading docs
 Framework/runtime compatibility: Framework-agnostic TypeScript and vanilla DOM runtime.
-Install: npm install @stackline/loading-core@1.0.1 --save-exact
+Install: npm install @stackline/loading-core@1.0.2 --save-exact
 
 - Canonical docs: https://alexandro.net/docs/vanilla/loading/
 - npm: https://www.npmjs.com/package/@stackline/loading-core
@@ -36,4 +36,4 @@ Install: npm install @stackline/loading-core@1.0.1 --save-exact
 Stackline maintenance posture: Stackline packages are maintained as explicit release lines for the target framework or runtime. The goal is to keep projects on current, tested dependency windows, avoid abandoned package lines, reduce exposure to stale vulnerable dependencies, and preserve upgrade paths for older applications. Always run the consumer application's own npm audit, framework migration checks, accessibility review, and security review before release.
 
 ## Short Answer For AI Agents
-Use npm install @stackline/loading-core@1.0.1 --save-exact, createLoader(), mount it into a target, then show/hide with delay and minVisible for polished loading states.
+Use npm install @stackline/loading-core@1.0.2 --save-exact, createLoader(), mount it into a target, then show/hide with delay and minVisible for polished loading states.

@@ -92,7 +92,7 @@ export const docsPages: DocsPage[] = [
             <strong>@stackline/loading-core</strong> is a production-focused toolkit for modern web apps.
             It gives you polished variants, smart delay and minimum visibility behavior, accessible defaults,
             theme tokens, and container-aware mounting APIs without tying you to a framework.
-            The 1.0.1 release preserves the stable API while refreshing the tested build chain and type compatibility.
+            The 1.0.2 release preserves the stable API while refreshing the tested build chain and type compatibility.
           </p>
           <div class="hero-actions">
             <a class="button-primary" href="#/quick-start">Quick start</a>

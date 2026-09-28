@@ -2,7 +2,10 @@
 
 All notable changes to `@stackline/loading-core` are documented here.
 
-## [Unreleased]
+## [1.0.2] - 2026-09-28
+
+- Organize the README with package links and the Stackline Reddit community.
+- Refine npm discovery keywords and publish verified artifacts through GitHub Actions.
 
 - Added a package-specific security policy, confidential reporting path, and
   shipped security guidance.

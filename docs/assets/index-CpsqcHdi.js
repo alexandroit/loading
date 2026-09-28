@@ -1782,7 +1782,7 @@ loader.show();`},{id:`artificial-delay`,title:`Artificial delay`,description:`De
             <strong>@stackline/loading-core</strong> is a production-focused toolkit for modern web apps.
             It gives you polished variants, smart delay and minimum visibility behavior, accessible defaults,
             theme tokens, and container-aware mounting APIs without tying you to a framework.
-            The 1.0.1 release preserves the stable API while refreshing the tested build chain and type compatibility.
+            The 1.0.2 release preserves the stable API while refreshing the tested build chain and type compatibility.
           </p>
           <div class="hero-actions">
             <a class="button-primary" href="#/quick-start">Quick start</a>
@@ -2129,4 +2129,4 @@ loader.show();`},{id:`artificial-delay`,title:`Artificial delay`,description:`De
           </div>
         </article>
       `).join(``),e.querySelectorAll(`[data-example-id]`).forEach(e=>{let t=e.dataset.exampleId,n=B.find(e=>e.id===t);if(!n)return;let r=e.querySelector(n.targetSelector)??e,i=N({...n.previewOptions??n.options,target:r});i.mount(r),i.show(),q.add(()=>i.destroy())}),X()}function ue(){document.querySelectorAll(`[data-gallery]`).forEach(e=>{Z(e,e.dataset.gallery===`featured`?R:r.map(e=>e.value))}),document.querySelectorAll(`[data-example-grid]`).forEach(e=>{le(e)}),document.querySelectorAll(`[data-playground]`).forEach(e=>{let t=L(e);q.add(t)})}function de(e){return e===`light`?`Dark mode`:`Light mode`}function Q(){let e=document.documentElement.dataset.docsTheme===`dark`?`dark`:`light`,t=de(e);document.querySelectorAll(`[data-theme-toggle]`).forEach(n=>{n.textContent=t,n.setAttribute(`aria-label`,`Switch to ${t.toLowerCase()}`),n.setAttribute(`title`,`Switch to ${t.toLowerCase()}`),n.setAttribute(`aria-pressed`,e===`dark`?`true`:`false`)})}function $(e){document.documentElement.dataset.docsTheme=e,re(document.documentElement,e===`light`?te:ne),window.localStorage.setItem(J,e),document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,e===`light`?`#f7fafc`:`#08111f`),Q()}function fe(){$(document.documentElement.dataset.docsTheme===`light`?`dark`:`light`)}function pe(){$(window.localStorage.getItem(J)===`dark`?`dark`:`light`)}pe(),window.addEventListener(`hashchange`,Y),Y();
-//# sourceMappingURL=index-BXSiEKL6.js.map
+//# sourceMappingURL=index-CpsqcHdi.js.map

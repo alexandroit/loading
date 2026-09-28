@@ -28,6 +28,7 @@ Files
 -----
 - loading.browser.js
 - LICENSE
+- SECURITY.md
 - README.md
 
 Script tag usage
@@ -66,10 +67,12 @@ Inside the archive:
 - \`loading.browser.js\`
 - \`README.md\`
 - \`LICENSE\`
+- \`SECURITY.md\`
 - \`INSTALLATION.txt\`
 `;
 
-await fs.rm(downloadRootDir, { recursive: true, force: true });
+await fs.rm(bundleDir, { recursive: true, force: true });
+await fs.rm(zipPath, { force: true });
 await fs.mkdir(bundleDir, { recursive: true });
 
 await esbuild.build({
@@ -85,6 +88,7 @@ await esbuild.build({
 
 await fs.copyFile(path.join(rootDir, "README.md"), path.join(bundleDir, "README.md"));
 await fs.copyFile(path.join(rootDir, "LICENSE"), path.join(bundleDir, "LICENSE"));
+await fs.copyFile(path.join(rootDir, "SECURITY.md"), path.join(bundleDir, "SECURITY.md"));
 await fs.writeFile(path.join(bundleDir, "INSTALLATION.txt"), installGuide, "utf8");
 await fs.writeFile(path.join(downloadRootDir, "README.md"), downloadReadme, "utf8");
 
