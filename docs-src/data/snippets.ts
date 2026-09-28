@@ -20,7 +20,7 @@ export const featuredVariants: LoaderVariant[] = [
 ];
 
 export const snippets = {
-  install: `npm install @stackline/loading-core`,
+  install: `npm install @stackline/loading-core@1.0.2`,
   quickStart: `import { createLoader } from '@stackline/loading-core';
 
 const card = document.querySelector('.sales-card');
