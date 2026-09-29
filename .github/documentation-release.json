@@ -1,0 +1,33 @@
+{
+  "repository": "alexandroit/loading",
+  "packages": [
+    {
+      "name": "@stackline/loading-core",
+      "path": "README.md",
+      "version": "1.0.3",
+      "baselineVersion": "1.0.2",
+      "keywords": [
+        "stackline",
+        "npm-package",
+        "loading-core",
+        "typescript",
+        "loading",
+        "spinner",
+        "skeleton",
+        "shimmer",
+        "loading-overlay",
+        "progress-indicator",
+        "aria-live",
+        "reduced-motion",
+        "javascript",
+        "browser",
+        "framework-agnostic"
+      ],
+      "homepage": "https://alexandro.net/docs/vanilla/loading/",
+      "baselineTarball": "https://registry.npmjs.org/@stackline/loading-core/-/loading-core-1.0.2.tgz",
+      "baselineIntegrity": "sha512-TMHt0G3VvQS7+BPJF1B5gPI7totHJUq3t9tNuRHIriZt4PbUQoILod1hPVWgLMU/zjjIqjEPLCDbjP8x134aKA==",
+      "expectedSha512": "e2abfcf81e2e2ab0f5b9d279d7ba26c7f82979b78238684ea5bdb1b32aea3cfc9af8c7b9d5baef5d1b65ec08349b466177e392944c3cb8ca1fefff5bdc602e85",
+      "tag": "docs-stackline-loading-core-v1.0.3"
+    }
+  ]
+}
