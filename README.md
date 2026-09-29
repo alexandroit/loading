@@ -1,14 +1,47 @@
 # @stackline/loading-core
 
-> A maintained **framework-agnostic loading toolkit** for modern web applications, with polished variants, smart anti-flicker behavior, accessible defaults, and a documentation site with a live playground.
+> Framework-agnostic TypeScript loading toolkit with spinners, overlays, skeletons, shimmer loaders, and smart anti-flicker behavior.
 
 [![npm version](https://img.shields.io/npm/v/@stackline/loading-core.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/loading-core)
-[![npm downloads](https://img.shields.io/npm/dt/@stackline/loading-core.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/loading-core)
-[![license](https://img.shields.io/npm/l/@stackline/loading-core.svg?style=flat-square)](LICENSE)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3.9%2B-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
-[![ESM + CJS](https://img.shields.io/badge/Build-ESM%20%2B%20CJS-111827?style=flat-square)](https://www.npmjs.com/package/@stackline/loading-core)
-[![Docs](https://img.shields.io/badge/Docs-Playground%20%26%20Guides-0f172a?style=flat-square)](https://alexandro.net/docs/vanilla/loading/)
+[![license](https://img.shields.io/npm/l/@stackline/loading-core.svg?style=flat-square)](https://github.com/alexandroit/loading)
+[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Floading-181717?style=flat-square&logo=github)](https://github.com/alexandroit/loading)
+[![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/loading/)
 [![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
+
+**[Documentation](https://alexandro.net/docs/vanilla/loading/)** | **[npm](https://www.npmjs.com/package/@stackline/loading-core)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
+
+**Current package version:** `1.0.3`
+
+---
+
+## Why this package?
+
+`@stackline/loading-core` is maintained as part of the Stackline package collection.
+
+## Compatibility
+
+| Item | Value |
+| :--- | :--- |
+| Package | `@stackline/loading-core@1.0.3` |
+| API target | `See the package-specific API reference` |
+| Supported Node.js | `See supported framework requirements` |
+| License | `MIT` |
+| Module type | `module` |
+| Main entry | `dist/index.cjs` |
+| Module entry | `dist/index.js` |
+| Types | `dist/index.d.ts` |
+| Runtime dependencies | `none` |
+
+## Installation
+
+```bash
+npm install @stackline/loading-core
+```
+
+## Usage and API reference
+
+> A maintained **framework-agnostic loading toolkit** for modern web applications, with polished variants, smart anti-flicker behavior, accessible defaults, and a documentation site with a live playground.
+
 
 **[Documentation & Playground](https://alexandro.net/docs/vanilla/loading/)** | **[npm](https://www.npmjs.com/package/@stackline/loading-core)** | **[GitHub Download](https://github.com/alexandroit/loading/tree/main/downloads)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
 
@@ -244,3 +277,21 @@ Join r/Stackline to share examples, ask usage questions, and discuss releases.
 ## License
 
 MIT
+
+## Credits and original authors
+
+- Alexandro Marques.
+- Copyright (c) 2026 Alexandro Marques.
+- Stackline maintenance: [Alexandro Paixao Marques](https://www.linkedin.com/in/aleinfo/) and [Stackline contributors](https://github.com/alexandroit).
+
+Original copyright, license notices and contributor acknowledgements remain part of this distribution. Stackline maintenance does not replace authorship of the original work.
+
+## Community and Links
+
+- [Stackline website](https://alexandro.net/)
+- [GitHub projects](https://github.com/alexandroit)
+- [npm packages](https://www.npmjs.com/~alex360qc)
+- [Reddit community — r/Stackline](https://www.reddit.com/r/Stackline/)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+
+Use this repository's issue tracker for reproducible bugs and feature requests. Join r/Stackline for examples, usage questions and release discussions.

@@ -1,6 +1,6 @@
 {
   "name": "@stackline/loading-core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Framework-agnostic TypeScript loading toolkit with spinners, overlays, skeletons, shimmer loaders, and smart anti-flicker behavior.",
   "type": "module",
   "main": "dist/index.cjs",
@@ -52,6 +52,9 @@
   },
   "keywords": [
     "stackline",
+    "npm-package",
+    "loading-core",
+    "typescript",
     "loading",
     "spinner",
     "skeleton",
@@ -60,7 +63,6 @@
     "progress-indicator",
     "aria-live",
     "reduced-motion",
-    "typescript",
     "javascript",
     "browser",
     "framework-agnostic"
