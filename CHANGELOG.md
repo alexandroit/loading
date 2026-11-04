@@ -2,6 +2,11 @@
 
 All notable changes to `@stackline/loading-core` are documented here.
 
+## 1.0.5 - 2026-11-04
+
+- Refresh the build and browser-test dependencies to address known security advisories.
+- Run CI and provenance publishing on patched Node.js releases.
+
 ## [1.0.2] - 2026-09-28
 
 - Organize the README with package links and the Stackline Reddit community.

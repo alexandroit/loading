@@ -10,7 +10,7 @@
 
 **[Documentation](https://alexandro.net/docs/vanilla/loading/)** | **[npm](https://www.npmjs.com/package/@stackline/loading-core)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
 
-**Current package version:** `1.0.4`
+**Current package version:** `1.0.5`
 
 ---
 
@@ -22,7 +22,7 @@
 
 | Item | Value |
 | :--- | :--- |
-| Package | `@stackline/loading-core@1.0.4` |
+| Package | `@stackline/loading-core@1.0.5` |
 | API target | `See the package-specific API reference` |
 | Supported Node.js | `See supported framework requirements` |
 | License | `MIT` |
@@ -45,7 +45,7 @@ npm install @stackline/loading-core
 
 **[Documentation & Playground](https://alexandro.net/docs/vanilla/loading/)** | **[npm](https://www.npmjs.com/package/@stackline/loading-core)** | **[GitHub Download](https://github.com/alexandroit/loading/tree/main/downloads)** | **[Issues](https://github.com/alexandroit/loading/issues)** | **[Repository](https://github.com/alexandroit/loading)**
 
-**Latest version:** `1.0.4`
+**Latest version:** `1.0.5`
 
 ---
 
